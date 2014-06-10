@@ -52,7 +52,7 @@
 
 
 <?php
-    // check part
+    // check part asd
 
  //echo "<a href='".Yii::app()->createUrl("site/about", array('alias'=>'products1', ))."'>werw</a>";
 
