@@ -133,7 +133,7 @@ div#header1 div#slide-holder div#slide-controls p#slide-nav a.on {
 background-position : 0 -12px;
 }
 div#header1 div#slide-holder div#slide-controls p#slide-nav a {
-background-image : url(images/silde-nav.png);
+/*background-image : url(images/silde-nav.png);*/
 background-size: 12px;
 }
 div#nav ul li a {
@@ -143,10 +143,7 @@ div#topnav ul li:nth-last-child(2) > a:hover > div#submenu{
 visibility:visible;
 }
 .contact_head {
-
-line-height: 22px;
-float:right;
-margin:10px;
+    line-height: 22px;
 }
 .contact_head span {
 float:right;
@@ -181,8 +178,6 @@ background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
 background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
 background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
-margin: 0 auto;
-width: 960px;
 height: 100px;
 padding: 10px;
 margin-top: 5px;
@@ -380,4 +375,22 @@ background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
 background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
 background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
+}
+
+
+.langs {
+    float:right;
+}
+
+.lang {
+    color: #ffffff;
+    padding: 4px 6px 5px 6px;
+}
+
+.lang:hover {
+    color: #ccc;
+}
+
+.flag {
+    background: #F66;
 }

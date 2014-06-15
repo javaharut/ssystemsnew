@@ -22,14 +22,6 @@
 
 <body>
 
-<div class="language_container">
-    <?php
-    $links = Yii::app()->urlManager->getLanguageImageLinks(array(), true, array(),array("class"=>"languages"));
-    foreach($links as $link)
-        echo $link;
-    ?>
-</div>
-
 <div class="container" id="page">
 
 
@@ -42,7 +34,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/cms/main/index'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Products', 'url'=>array('/cms/products'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Banner', 'url'=>array('/cms/banner'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Sub Products', 'url'=>array('/cms/subproducts'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Items', 'url'=>array('/cms/items'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Features', 'url'=>array('/cms/features'), 'visible'=>!Yii::app()->user->isGuest),

@@ -30,9 +30,7 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-
         'cms',
-
 	),
 
 	// application components
@@ -73,7 +71,6 @@ return array(
                 //'<controller:\w+>/<action:\w+>/<alias:\w+>'=>'<controller>/<action>',
 
                // '<controller:\w+>/<action:\w+>'=>'<controller>',
-
                 'cms'=>'cms/main/index',
                 '<module:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<module>/<controller>/<action>/<id>',
                 '<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',

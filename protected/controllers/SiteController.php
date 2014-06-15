@@ -46,9 +46,10 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+        $banners = Banner::model()->findAll();
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layouts 'protected/views/layouts/main.php'
-		$this->render('index');
+		$this->render('index', array('banners'=>$banners));
 	}
 
 	/**

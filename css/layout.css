@@ -15,8 +15,12 @@ body{
 	font-size:12px;
 	font-family:verdana, Arial, Helvetica, sans-serif;
 	color:#FFFFFF;
-	//background-color:#29313C;
 	}
+
+#content {
+    width:960px;
+    margin: 0 auto;
+}
 
 img{border:0; padding:0; margin:0;}
 .justify{text-align:justify;}
@@ -331,7 +335,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 #breadcrumb{
 	padding:30px 0;
-	//border-bottom:1px solid #CCCCCC;
+	/*border-bottom:1px solid #CCCCCC;*/
 	}
 
 #breadcrumb a{
@@ -360,12 +364,6 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6{
 	padding-bottom:8px;
 	border-bottom:1px dotted #CCCCCC;
-	}
-
-#content{
-	display:block;
-	float:left;
-	width:641px;
 	}
 
 /* ------Comments-----*/
