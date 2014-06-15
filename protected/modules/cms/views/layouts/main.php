@@ -34,6 +34,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/cms/main/index'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Main page', 'url'=>array('/cms/main/mainform'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Banner', 'url'=>array('/cms/banner'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Sub Products', 'url'=>array('/cms/subproducts'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Items', 'url'=>array('/cms/items'), 'visible'=>!Yii::app()->user->isGuest),

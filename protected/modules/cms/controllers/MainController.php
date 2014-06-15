@@ -34,6 +34,31 @@ class MainController extends SecureController
         $this->render('login',array('model'=>$model));
     }
 
+    public function actionMainform()
+    {
+        $model=Main::model()->find();
+
+        // uncomment the following code to enable ajax-based validation
+        /*
+        if(isset($_POST['ajax']) && $_POST['ajax']==='main-mainform-form')
+        {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+        */
+
+        if(isset($_POST['Main']))
+        {
+            $model->attributes=$_POST['Main'];
+            if($model->validate())
+            {
+                // form inputs are valid, do something here
+                return;
+            }
+        }
+        $this->render('mainform',array('model'=>$model));
+    }
+
     /**
      * Logs out the current user and redirect to homepage.
      */
