@@ -43,7 +43,7 @@ a{outline:none; text-decoration:none;}
 
 div.wrapper{
 	display:block;
-	width:996px;
+	width:960px;
 	margin:0 auto 0;
 	text-align:center;
 	-moz-border-radius: 10px;
@@ -90,7 +90,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	position:relative;
 	margin:0 auto 0;
 	display:block;
-	width:996px;
+	width:960px;
 	background:#29527E;
 	//background-image: url(/images/bg_menu.jpg);
 	background-repeat: repeat-x;
