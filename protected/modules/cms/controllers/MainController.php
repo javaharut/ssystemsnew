@@ -38,14 +38,11 @@ class MainController extends SecureController
     {
         $model=Main::model()->find();
 
-        // uncomment the following code to enable ajax-based validation
-        /*
         if(isset($_POST['ajax']) && $_POST['ajax']==='main-mainform-form')
         {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
-        */
 
         if(isset($_POST['Main']))
         {
@@ -53,7 +50,7 @@ class MainController extends SecureController
             if($model->validate())
             {
                 // form inputs are valid, do something here
-                return;
+                Yii::app()->user->setFlash("success","Saved!!!");
             }
         }
         $this->render('mainform',array('model'=>$model));
