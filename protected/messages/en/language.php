@@ -11,16 +11,17 @@
  * @version $Id: $
  */
 return array (
-    //'products'=>'Ապրանքներ',
+    'main' => 'Home',
+    'products'=>'Products',
+    'partners'=>'Partners',
+    'certificates'=>'Certificates',
     'about'=>'About',
-    'blogs'=>'Blogs',
+    'gallery'=>'Gallery',
     'contacts'=>'Contacts',
-    'from_where'=>'From where',
-    'mail_success'=>'Thank you for contacting with us',
-    'mail_failure'=>'Please fill all the fields correctly',
-    'go_back'=>'Go Back',
-    'Nail_solutions'=>'Nail Solutions',
-    'my_nails_are'=>'My Nails are...',
+    //'mail_failure'=>'Please fill all the fields correctly',
+    //'go_back'=>'Go Back',
+   // 'Nail_solutions'=>'Nail Solutions',
+   // 'my_nails_are'=>'My Nails are...',
 
     //'All Rights Reserved'=>'All Rights Reserved',
 );

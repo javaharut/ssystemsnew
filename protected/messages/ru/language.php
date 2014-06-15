@@ -11,16 +11,17 @@
  * @version $Id: $
  */
 return array (
+    'main'=>'Главное',
     'products'=>'Продукты',
+    'partners'=>'Партнеры',
+    'certificates'=>'Сертификаты',
     'about'=>'О нас',
-    'blogs'=>'Блогы',
+    'gallery'=>'Галерея',
     'contacts'=>'Контакты',
-    'from_where'=>'Откуда',
-    'All Rights Reserved'=>'Все права зашишены',
-    'mail_success'=>'Спасибо для контакта с нами',
-    'mail_failure'=>'Пожалуйста заполните все поля правильно',
-    'go_back'=>'Назад',
-    'Nail_solutions'=>'Решение когтей',
-    'my_nails_are'=>'Мои когти ...',
+   // 'mail_success'=>'Спасибо для контакта с нами',
+    //'mail_failure'=>'Пожалуйста заполните все поля правильно',
+    //'go_back'=>'Назад',
+   // 'Nail_solutions'=>'Решение когтей',
+   // 'my_nails_are'=>'Мои когти ...',
 );
 
