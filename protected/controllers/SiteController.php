@@ -264,11 +264,11 @@ class SiteController extends Controller
             echo Yii::t("language", "mail_success");
         }
         else {
-            echo Yii::t("language", "mail_failure");
+            echo  Yii::t("language", "mail_failure");
         }
     }
 
 
-
+/**************** sax  normal  e**************************/
 
 }
