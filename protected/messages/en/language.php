@@ -18,6 +18,7 @@ return array (
     'about'=>'About',
     'gallery'=>'Gallery',
     'contacts'=>'Contacts',
+    'logo'=>'logoArm_en.png',
     //'mail_failure'=>'Please fill all the fields correctly',
     //'go_back'=>'Go Back',
    // 'Nail_solutions'=>'Nail Solutions',

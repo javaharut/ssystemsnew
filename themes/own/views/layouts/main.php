@@ -47,7 +47,7 @@
 <div id="content">
 <div class="logo1">
     <div class='logo'>
-        <a href="<?=Yii::app()->request->baseUrl?>"><img src="<?=Yii::app()->request->baseUrl?>/css/images/logoArm.png" class="logo" alt="" /></a>
+        <a href="<?=Yii::app()->request->baseUrl?>"><img src="<?=Yii::app()->request->baseUrl?>/css/images/<?= Yii::t('language','logo')?>" class="logo" alt="" /></a>
     </div>
 
     <div class="langs">
