@@ -389,13 +389,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endC
 
 .lang:hover {
    /* color: #ccc;*/
-    color:#3014D6;
+    color:#3789D4;
 
 }
 
 .flag {
    /* background: #F66;*/
-    background: #3789D4;
+    /*background: #3789D4;*/
+    background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 31%,#066dab 100%);
     border-radius: 15px 15px 15px 15px;
     padding: 5px 12px
 }
