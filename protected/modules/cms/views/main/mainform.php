@@ -58,6 +58,25 @@
 	</div>
 
     <hr />
+    <div class="row">
+        <?php echo $form->labelEx($model,'title'); ?>
+        <?php echo $form->textField($model,'title',array('size'=>80,'maxlength'=>250)); ?>
+        <?php echo $form->error($model,'title'); ?>
+    </div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'title_ru'); ?>
+        <?php echo $form->textField($model,'title_ru',array('size'=>80,'maxlength'=>250)); ?>
+        <?php echo $form->error($model,'title_ru'); ?>
+    </div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'title_en'); ?>
+        <?php echo $form->textField($model,'title_en',array('size'=>80,'maxlength'=>250)); ?>
+        <?php echo $form->error($model,'title_en'); ?>
+    </div>
+
+    <hr />
 
     <?php
     $this->widget('CTabView',array(
