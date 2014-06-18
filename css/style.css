@@ -400,3 +400,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endC
     border-radius: 15px 15px 15px 15px;
     padding: 5px 12px
 }
+
+div .mail-content{
+    padding:70px;
+    min-width: 787px;
+}

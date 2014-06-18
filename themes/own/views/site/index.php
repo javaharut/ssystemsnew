@@ -111,7 +111,7 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
     <!-- Slides Container -->
     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 960px; height: 300px;
             overflow: hidden;">
-        <?php foreach($banners as $banner):?>  
+        <?php foreach($banners as $banner):?>
             <div>
                 <img u=image src="<?=$baseUrl.'/images/banner/'.$banner->id.'.png'?>" />
                 <div u="thumb"><a href="<?=$banner->curl?>" class="slide_text"><?=$banner->cdesc?></a></div>
@@ -214,4 +214,37 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
 
     <?php $this->renderPartial('_menu', false,false); ?>
 
+<div align="center">
+    <div class="wrapper col3">
 
+        <div id="breadcrumb" style="text-align: left;">
+            <ul>
+                <li class="current"><a href="<?=$banners_by_id->curl?>"><?= Yii::t('language','main')?></a></li>    </ul>
+        </div>
+
+
+        <div>
+
+
+            <table border="0" cellspacing="5px">
+                <tbody>
+                <tr>
+                    <td valign="top">
+                    </td>
+                    <td valign="top">
+                        <div id="intro"><div class="fl_left">
+                                <div  class="mail-content">
+                                   <?=$banners_by_id->cdesc?>
+                                </div>
+                            </div></div>
+                    </td>
+
+                </tr>
+
+
+                </tbody>
+             </table>
+
+
+        </div></div>
+</div>

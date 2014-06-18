@@ -240,7 +240,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #services li{
 	display:block;
 	float:left;
-	width:294px;
+	width:286px;
 	height:180px;
 	margin:0 21px 0 0;
 	padding:10px;
@@ -296,7 +296,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .readmore {
 	display:block;
 	width:119px;
-	margin: 164px 0 0 178;
+	margin: 164px 0 0 170px;
 	position: absolute;
 	padding:0;
 	text-align:right;
