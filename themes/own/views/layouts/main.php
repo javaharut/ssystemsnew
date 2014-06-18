@@ -59,10 +59,10 @@
     </div>
 
     <div class='contact_head'>
-        <span class="name" style="margin: 0px 57px 10px 0px;font-size: 20px;font-weight: bold;">(+374) 77 44 77 11; (+374) 95 10 03 01</span><br />
-        <div class="author_head" style="font-size: 12px">Адрес: <span class="name"> Армения,    0048, г.     Ереван,     Бекназарян   5 / 7</span></div><br />
-        <div class="author_head" style="font-size: 12px">Телефон: <span class="name">(+374) 60 50 07 06</span></div>
-        <div class="author_head" style="font-size:12px;margin-left:48px;">E-mail: <span class="name">info@ssystems.am</span></div>
+        <span class="name" style="margin: 0px 150px 10px 0px;font-size: 30px;font-weight: bold;">Solid Systems</span><br />
+        <div class="author_head" style="font-size: 13px">Адрес: <span class="name"> Армения,0048, г.Ереван, Бекназарян 5/7</span></div><br />
+        <div class="author_head" style="font-size: 13px">Телефон: <span class="name">+374(77)-44-77-11; +374(95)-10-03-01; +374(60)-50-07-06</span></div>
+        <div class="author_head" style="font-size:13px;margin-left:85px;">E-mail: <span class="name">info@ssystems.am</span></div>
     </div>
 
 
