@@ -135,7 +135,7 @@ $this->renderPartial('_menu', false,false);
                                             <span class="name"><?=$product->ctitle?>
                                               <div><p>  </p></div>
                                               <p>
-                                                  <a style="margin-left: 230px;margin-top: 16px;position: absolute;z-index: 1;" class="bgfon" href="<?=$baseUrl.'/products/'.$product->id ?>"><?=Yii::t('language','more')?></a>
+                                                  <a style="margin-left: 230px;margin-top: 16px;position: absolute;z-index: 1;" class="bgfon" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/products/'.$product->id ?>"><?=Yii::t('language','more')?></a>
                                               </p>
                                             </span>
                                         </div>
