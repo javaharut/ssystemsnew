@@ -12,7 +12,7 @@
                     // not just as 'controller' even if default acion is used.
                     array('label'=>Yii::t('language','main'), 'url'=>array('site/index')),
                     // 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
-                    array('label'=>Yii::t('language','products'), 'url'=>array('product/index')),
+                    array('label'=>Yii::t('language','products'), 'url'=>array('site/product')),
                     array('label'=>Yii::t('language','partners'), 'url'=>array('product/index')),
                     array('label'=>Yii::t('language','certificates'), 'url'=>array('product/index')),
                     array('label'=>Yii::t('language','about'), 'url'=>array('site/about')),

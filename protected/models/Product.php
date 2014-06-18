@@ -29,6 +29,41 @@ class Product extends CActiveRecord
 		return 'product';
 	}
 
+    public function getcmetadesc() {
+        if(Yii::app()->language == "am")
+            return $this->meta_desc;
+        else if(YII::app()->language == "ru")
+            return $this->meta_desc_ru;
+        else
+            return $this->meta_desc_en;
+    }
+
+    public function getckeyword() {
+        if(Yii::app()->language == "am")
+            return $this->keyword;
+        else if(YII::app()->language == "ru")
+            return $this->keyword_ru;
+        else
+            return $this->keyword_en;
+    }
+
+    public function getctitle() {
+        if(Yii::app()->language == "am")
+            return $this->title;
+        else if(YII::app()->language == "ru")
+            return $this->title_ru;
+        else
+            return $this->title_en;
+    }
+
+    public function getcdesc() {
+        if(Yii::app()->language == "am")
+            return $this->desc;
+        else if(YII::app()->language == "ru")
+            return $this->desc_ru;
+        else
+            return $this->desc_en;
+    }
 	/**
 	 * @return array validation rules for model attributes.
 	 */

@@ -94,7 +94,13 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
+    public function actionProduct(){
+        $products = Product::model()->findAll();
 
+        // renders the view file 'protected/views/site/index.php'
+        // using the default layouts 'protected/views/layouts/main.php'
+        $this->render('products', array('products'=>$products));
+    }
     public function actionProducts($id)
     {
         $prod = Products::model()->find("lang=:x AND alias=:alias", array(':x'=>Yii::app()->language,':alias'=>$id,));

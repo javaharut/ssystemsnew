@@ -20,6 +20,7 @@ return array (
     'gallery'=>'Галерея',
     'contacts'=>'Контакты',
     'logo'=>'logoArm_ru.png',
+    'more'=>'Подробнее',
    // 'mail_success'=>'Спасибо для контакта с нами',
     //'mail_failure'=>'Пожалуйста заполните все поля правильно',
     //'go_back'=>'Назад',
