@@ -11,6 +11,7 @@
  * @version $Id: $
  */
 return array (
+    'prefix'=>'en',
     'main' => 'Home',
     'products'=>'Products',
     'partners'=>'Partners',

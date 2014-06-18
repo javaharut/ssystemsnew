@@ -11,6 +11,7 @@
  * @version $Id: $
  */
 return array (
+    'prefix'=>'ru',
     'main'=>'Главное',
     'products'=>'Продукты',
     'partners'=>'Партнеры',

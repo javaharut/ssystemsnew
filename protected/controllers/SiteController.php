@@ -47,11 +47,11 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
         $banners = Banner::model()->findAll();
-        $banners_by_id = Banner::model()->findByPk(4);
+        $main_by_id = Main::model()->findByPk(1);
 
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layouts 'protected/views/layouts/main.php'
-		$this->render('index', array('banners'=>$banners,'banners_by_id'=>$banners_by_id));
+		$this->render('index', array('banners'=>$banners,'main_by_id'=>$main_by_id));
 	}
 
 	/**
@@ -173,7 +173,12 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
-        $this->render('about');
+        $main_by_id = Main::model()->findByPk(2);
+
+        // renders the view file 'protected/views/site/index.php'
+        // using the default layouts 'protected/views/layouts/main.php'
+        $this->render('about', array('main_by_id'=>$main_by_id));
+//        $this->render('about');
     }
 
     public function actionContacts()

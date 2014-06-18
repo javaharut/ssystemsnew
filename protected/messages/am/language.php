@@ -11,6 +11,7 @@
  * @version $Id: $
  */
 return array (
+    'prefix'=>'am',
     'main'=>'Գլխավոր',
     'products'=>'Ապրանքներ',
     'partners'=>'Գործընկերներ',
