@@ -125,7 +125,11 @@ class SiteController extends Controller
         $this->render('_products', array('product'=>$product));
     }
 
-
+    public function actionCertificates()
+    {
+        $certificates = Certificates::model()->findAll();
+        $this->render('certificates', array('certificates'=>$certificates));
+    }
 
     public function actionFromWhere()
     {
