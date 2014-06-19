@@ -18,7 +18,6 @@
                     array('label'=>Yii::t('language','about'), 'url'=>array('site/about')),
                     array('label'=>Yii::t('language','gallery'), 'url'=>array('product/index')),
                     array('label'=>Yii::t('language','contacts'), 'url'=>array('product/index')),
-                    array('label'=>'Login', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest),
                 ),
             ));
             ?>

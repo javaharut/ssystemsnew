@@ -72,11 +72,17 @@
 
 <?php echo $content; ?>
 </div>
-<div id="footer">
-    Design & Development by <?=Chtml::link("gglaboratories.", "http://gglaboratories.com", array('target'=>'_blank', 'class'=>'ggurl'))?>
-    <br>
-    &copy; Copyright Saninail 2014. All Rights Reserved.
-</div><!-- footer -->
+    <div class="wrapper col7" style="background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3D4F5), to(#1A3450));
+        background-image: -webkit-linear-gradient(top, #A3D4F5, #1A3450);
+        background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
+        background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
+        background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450'); background-repeat: repeat-x;">
+        <div id="copyright" align="center">
+            <p class="fl_left">© 2012 «Ssystems — контроль расхода топлива». Все права защищены.</p>
+            <br class="clear">
+        </div>
+    </div>
 <!--</div> --> <!-- page -->
 </body>
 </html>
