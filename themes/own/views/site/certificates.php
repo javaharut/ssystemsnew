@@ -29,9 +29,13 @@ $this->renderPartial('_menu', false,false);
 
 <!--                                <div class="bswr bgfon" style="margin-bottom:11px;">Сертификаты</div>-->
                                 <?php foreach($certificates as $certificate):?>
-                                <div style="width: 130px; height: 180px; overflow: hidden; padding: 10px; margin: 5px; float: left; ">
+                                <div class="hovergallery" style="width: 210px; height: 300px; overflow: hidden; padding: 10px; margin: 5px; float: left;
+
+
+
+                                 ">
                                     <a href="<?=$baseUrl?>/images/up/certificates/<?=$certificate->CER_PHOTO?>" rel="lightbox[plants]">
-                                        <img width="130" src="<?=$baseUrl?>/images/up/certificates/<?=$certificate->CER_PHOTO?>" alt="<?=$certificate->CER_TITLE?>" title="<?=$certificate->CER_TITLE?>">
+                                        <img width="210" src="<?=$baseUrl?>/images/up/certificates/<?=$certificate->CER_PHOTO?>" alt="<?=$certificate->CER_TITLE?>" title="<?=$certificate->CER_TITLE?>">
                                     </a>
                                 </div>
                                 <?php endforeach;?>
