@@ -22,6 +22,7 @@ return array (
     'logo'=>'logoArm_en.png',
     'more'=>'More',
     'footer'=>'© 2014 «Ssystems — FUEL REGISTRATORS IMPORTATION COMPANY ». All rights reserved',
+    'header'=>'Omnicomm companys official representative in Armenia, Nagorno-Karabakh and Georgia.',
     //'mail_failure'=>'Please fill all the fields correctly',
     //'go_back'=>'Go Back',
    // 'Nail_solutions'=>'Nail Solutions',
