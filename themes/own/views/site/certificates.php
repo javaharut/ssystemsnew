@@ -3,7 +3,7 @@
 $baseUrl = Yii::app()->baseUrl;
 Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/lightbox.css');
 //Yii::app()->clientScript->registerCssFile('http://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400,700');
-$this->renderPartial('_menu', false,false);
+$this->renderPartial('_menu', false, false);
 ?>
 <div class="wrapper col3">
 

@@ -34,10 +34,10 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/cms/main/index'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Main page', 'url'=>array('/cms/main/mainform'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Main', 'url'=>array('/cms/main/mainform'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'about', 'url'=>array('/cms/main/about'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Banner', 'url'=>array('/cms/banner'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Sub Products', 'url'=>array('/cms/subproducts'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Items', 'url'=>array('/cms/items'), 'visible'=>!Yii::app()->user->isGuest),
+			    array('label'=>'products', 'url'=>array('/cms/product'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Features', 'url'=>array('/cms/features'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Blog', 'url'=>array('/cms/blog'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Map objects', 'url'=>array('/cms/mapobjects'), 'visible'=>!Yii::app()->user->isGuest),

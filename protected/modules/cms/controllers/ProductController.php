@@ -1,7 +1,12 @@
 <?php
 
-class MapObjectsController extends SecureController
+class ProductController extends SecureController
 {
+	/**
+	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+	 * using two-column layout. See 'protected/views/layouts/column2.php'.
+	 */
+	//public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -57,14 +62,14 @@ class MapObjectsController extends SecureController
 	 */
 	public function actionCreate()
 	{
-		$model=new MapObjects;
+		$model=new Product;
 
 		// Uncomment the following line if AJAX validation is needed
-		 $this->performAjaxValidation($model);
+		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['MapObjects']))
+		if(isset($_POST['Product']))
 		{
-			$model->attributes=$_POST['MapObjects'];
+			$model->attributes=$_POST['Product'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -84,11 +89,11 @@ class MapObjectsController extends SecureController
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		 $this->performAjaxValidation($model);
+		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['MapObjects']))
+		if(isset($_POST['Product']))
 		{
-			$model->attributes=$_POST['MapObjects'];
+			$model->attributes=$_POST['Product'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -117,7 +122,7 @@ class MapObjectsController extends SecureController
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('MapObjects');
+		$dataProvider=new CActiveDataProvider('Product');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -128,10 +133,10 @@ class MapObjectsController extends SecureController
 	 */
 	public function actionAdmin()
 	{
-		$model=new MapObjects('search');
+		$model=new Product('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['MapObjects']))
-			$model->attributes=$_GET['MapObjects'];
+		if(isset($_GET['Product']))
+			$model->attributes=$_GET['Product'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -142,12 +147,12 @@ class MapObjectsController extends SecureController
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return MapObjects the loaded model
+	 * @return Product the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=MapObjects::model()->findByPk($id);
+		$model=Product::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -155,11 +160,11 @@ class MapObjectsController extends SecureController
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param MapObjects $model the model to be validated
+	 * @param Product $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='map-objects-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='product-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

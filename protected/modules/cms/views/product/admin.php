@@ -1,6 +1,6 @@
 <?php
-/* @var $this ProductsController */
-/* @var $model Products */
+/* @var $this ProductController */
+/* @var $model Product */
 
 $this->breadcrumbs=array(
 	'Products'=>array('index'),
@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Products', 'url'=>array('index')),
-	array('label'=>'Create Products', 'url'=>array('create')),
+	array('label'=>'List Product', 'url'=>array('index')),
+	array('label'=>'Create Product', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -18,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#products-grid').yiiGridView('update', {
+	$('#product-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -41,16 +41,26 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'products-grid',
+	'id'=>'product-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'meta_keyword',
-		'meta_description',
+		'keyword',
+		'keyword_ru',
+		'keyword_en',
+		'meta_desc',
+		'meta_desc_ru',
+		/*
+		'meta_desc_en',
 		'title',
-		'alias',
-		'lang',
+		'title_ru',
+		'title_en',
+		'desc',
+		'desc_ru',
+		'desc_en',
+		'img',
+		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

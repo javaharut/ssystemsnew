@@ -1,5 +1,5 @@
 <?php
-/* @var $this ProductsController */
+/* @var $this ProductController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Products', 'url'=>array('create')),
-	array('label'=>'Manage Products', 'url'=>array('admin')),
+	array('label'=>'Create Product', 'url'=>array('create')),
+	array('label'=>'Manage Product', 'url'=>array('admin')),
 );
 ?>
 
