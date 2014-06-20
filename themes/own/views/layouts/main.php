@@ -72,14 +72,17 @@
 
 <?php echo $content; ?>
 </div>
-    <div class="wrapper col7" style="background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3D4F5), to(#1A3450));
-        background-image: -webkit-linear-gradient(top, #A3D4F5, #1A3450);
-        background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
-        background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
-        background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450'); background-repeat: repeat-x;">
+    <div class="wrapper col7" style="background: rgb(53,106,160); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(53,106,160,1)), color-stop(100%,rgba(53,106,160,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ background-repeat: repeat-x;">
         <div id="copyright" align="center">
-            <p class="fl_left">© 2012 «Ssystems — контроль расхода топлива». Все права защищены.</p>
+            <p class="fl_left"><?= Yii::t('language','footer')?></p>
             <br class="clear">
         </div>
     </div>
