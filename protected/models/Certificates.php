@@ -18,6 +18,10 @@ class Certificates extends CActiveRecord
 		return 'certificates';
 	}
 
+    public function getid() {
+        return $this->CER_ID;
+    }
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */

@@ -56,6 +56,8 @@ class MainController extends SecureController
         $this->render('mainform',array('model'=>$model));
     }
 
+
+
     public function actionAbout() {
         $model=Main::model()->findByPk(2);
 

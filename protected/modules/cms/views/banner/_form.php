@@ -58,6 +58,11 @@
         <?php echo $form->error($model,'desc_en'); ?>
     </div>
     <hr />
+    <?php if(!$model->isNewRecord): ?>
+        <?php echo CHtml::image(Yii::app()->baseUrl."/images/banner/".$model->id.".png",
+            null,array("width"=>400)); ?>
+    <?php endif ?>
+    <br>
 
     <?php $this->widget('ext.EAjaxUpload.EAjaxUpload',
         array(

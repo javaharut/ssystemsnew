@@ -1,7 +1,12 @@
 <?php
 
-class SubProductsController extends SecureController
+class CertificatesController extends SecureController
 {
+	/**
+	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+	 * using two-column layout. See 'protected/views/layouts/column2.php'.
+	 */
+	//public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -19,15 +24,10 @@ class SubProductsController extends SecureController
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
-	public function accessRules()
-	{
+    public function accessRules()
+    {
         return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','view'),
-                'users'=>array('@'),
-            ),
-            array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update'),
                 'users'=>array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -38,7 +38,7 @@ class SubProductsController extends SecureController
                 'users'=>array('*'),
             ),
         );
-	}
+    }
 
 	/**
 	 * Displays a particular model.
@@ -57,24 +57,29 @@ class SubProductsController extends SecureController
 	 */
 	public function actionCreate()
 	{
-		$model=new SubProducts;
-
-        $products = Products::model()->findAll();
+		$model=new Certificates;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['SubProducts']))
+		if(isset($_POST['Certificates']))
 		{
-			$model->attributes=$_POST['SubProducts'];
+			$model->attributes=$_POST['Certificates'];
+            if($model->save()) {
+                if(file_exists($_SERVER['DOCUMENT_ROOT'] . Yii::app()->baseUrl . '/images/certificates/uploaded.png')) {
+                    Yii::app()->ih->load($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/certificates/uploaded.png')
+                        ->save($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/certificates/' . $model->id . '.png');
 
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                    $model->CER_PHOTO = $model->id . ".png";
+                    $model->save();
+                    unlink($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/certificates/uploaded.png');
+                }
+                $this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-            'products'=>$products,
 		));
 	}
 
@@ -87,21 +92,28 @@ class SubProductsController extends SecureController
 	{
 		$model=$this->loadModel($id);
 
-        $products = Products::model()->findAll();
-
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['SubProducts']))
+		if(isset($_POST['Certificates']))
 		{
-			$model->attributes=$_POST['SubProducts'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			$model->attributes=$_POST['Certificates'];
+
+                if(file_exists($_SERVER['DOCUMENT_ROOT'] . Yii::app()->baseUrl . '/images/banner/uploaded.png')) {
+                    Yii::app()->ih->load($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/banner/uploaded.png')
+                        ->save($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/banner/' . $model->id . '.png');
+
+                    $model->CER_PHOTO = $model->id . '.png';
+
+                    unlink($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/banner/uploaded.png');
+                }
+            if($model->save()) {
+                $this->redirect(array('view','id'=>$model->id));
+            }
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
-            'products'=>$products,
 		));
 	}
 
@@ -124,7 +136,7 @@ class SubProductsController extends SecureController
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('SubProducts');
+		$dataProvider=new CActiveDataProvider('Certificates');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -135,26 +147,45 @@ class SubProductsController extends SecureController
 	 */
 	public function actionAdmin()
 	{
-		$model=new SubProducts('search');
+		$model=new Certificates('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['SubProducts']))
-			$model->attributes=$_GET['SubProducts'];
+		if(isset($_GET['Certificates']))
+			$model->attributes=$_GET['Certificates'];
 
 		$this->render('admin',array(
 			'model'=>$model,
 		));
 	}
 
-	/**
+
+    /*
+     *  Region Ajax calls
+     */
+    public function actionUpload()
+    {
+        Yii::import("ext.EAjaxUpload.qqFileUploader");
+        $folder= 'images/certificates/';                                // folder for uploaded files
+        $allowedExtensions = array("jpg", "jpeg", "png");         //array("jpg","jpeg","gif","exe","mov" and etc...
+        $sizeLimit = 5 * 1024 * 1024;                             // maximum file size in bytes
+        $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
+        $result = $uploader->handleUpload($folder);
+        $return = htmlspecialchars(json_encode($result), ENT_NOQUOTES);
+
+        echo $return;// it's array
+        Yii::app()->end();
+    }
+
+
+    /**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return SubProducts the loaded model
+	 * @return Certificates the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=SubProducts::model()->findByPk($id);
+		$model=Certificates::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -162,11 +193,11 @@ class SubProductsController extends SecureController
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param SubProducts $model the model to be validated
+	 * @param Certificates $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='sub-products-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='certificates-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

@@ -24,27 +24,21 @@ class ProductController extends SecureController
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
-	public function accessRules()
-	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
-
+    public function accessRules()
+    {
+        return array(
+            array('allow',  // allow all users to perform 'index' and 'view' actions
+                'users'=>array('@'),
+            ),
+            array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                'actions'=>array('admin','delete'),
+                'users'=>array('admin'),
+            ),
+            array('deny',  // deny all users
+                'users'=>array('*'),
+            ),
+        );
+    }
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
@@ -65,13 +59,24 @@ class ProductController extends SecureController
 		$model=new Product;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
-		if(isset($_POST['Product']))
-		{
-			$model->attributes=$_POST['Product'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+        if(isset($_POST['Product']))
+        {
+            $model->attributes=$_POST['Product'];
+            $model->save();
+            if(file_exists($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/product/uploaded.png')) {
+
+                Yii::app()->ih->load($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/product/uploaded.png')
+                    ->save($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/product/' . $model->id . '.png');
+                $model->img=1;
+                unlink($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/product/uploaded.png');
+            }
+            else {
+                $model->img=0;
+            }
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -89,13 +94,22 @@ class ProductController extends SecureController
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Product']))
 		{
 			$model->attributes=$_POST['Product'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+
+                if(file_exists($_SERVER['DOCUMENT_ROOT'] . Yii::app()->baseUrl . '/images/product/uploaded.png')) {
+                    Yii::app()->ih->load($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/product/uploaded.png')
+                        ->save($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/product/' . $model->id . '.png');
+
+                    unlink($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/product/uploaded.png');
+                    $model->img = 1;
+                }
+
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(
@@ -142,6 +156,27 @@ class ProductController extends SecureController
 			'model'=>$model,
 		));
 	}
+
+
+    /*
+    *  Region Ajax calls
+    */
+    public function actionUpload()
+    {
+        Yii::import("ext.EAjaxUpload.qqFileUploader");
+        $folder= 'images/product/';// folder for uploaded files
+        $allowedExtensions = array("jpg", "jpeg", "png");//array("jpg","jpeg","gif","exe","mov" and etc...
+        $sizeLimit = 5 * 1024 * 1024;// maximum file size in bytes
+        $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
+        $result = $uploader->handleUpload($folder);
+        $return = htmlspecialchars(json_encode($result), ENT_NOQUOTES);
+
+        $fileSize=filesize($folder.$result['filename']);//GETTING FILE SIZE
+        $fileName=$result['filename'];//GETTING FILE NAME
+
+        echo $return;// it's array
+        Yii::app()->end();
+    }
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

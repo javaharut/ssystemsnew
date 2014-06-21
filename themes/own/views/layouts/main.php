@@ -69,7 +69,6 @@
     <div class="clear"></div>
 
 </div>
-
 <?php echo $content; ?>
 </div>
     <div class="wrapper col7" style="background: rgb(53,106,160); /* Old browsers */

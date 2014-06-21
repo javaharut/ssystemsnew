@@ -1,18 +1,18 @@
 <?php
-/* @var $this FeaturesController */
+/* @var $this CertificatesController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Features',
+	'Certificates',
 );
 
 $this->menu=array(
-	array('label'=>'Create Features', 'url'=>array('create')),
-	array('label'=>'Manage Features', 'url'=>array('admin')),
+	array('label'=>'Create Certificates', 'url'=>array('create')),
+	array('label'=>'Manage Certificates', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Features</h1>
+<h1>Certificates</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
