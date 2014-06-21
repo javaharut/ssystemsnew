@@ -38,6 +38,16 @@ a{outline:none; text-decoration:none;}
 .imgl{float:left; margin:0 8px 8px 0; clear:left;}
 .imgr{float:right; margin:0 0 8px 8px; clear:right;}
 
+
+/* ---------------------------------------------Header------------------------------------
+.fb {
+    background: url(css/images/fb.png) no-repeat;
+    float: right;
+
+
+}
+*/
+
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
 div.wrapper{
