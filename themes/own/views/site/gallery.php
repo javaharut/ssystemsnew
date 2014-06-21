@@ -27,26 +27,25 @@ $this->renderPartial('_menu', false,false);
             <tr>
                 <td class="album">
                     <a class="modal" id="29" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/albom/'?>">
-                        <div width="200px" height="200px">
-                            <img src="<?=$baseUrl?>/images/wide-wallpaper-1920x1080-069.jpg" width="190px" height="154px" style="margin-left: -16px; margin-top: 49px">
+                        <div width="300px" height="250px">
+                            <img src="<?=$baseUrl?>/images/images.png" width="256px" height="200px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;">
                         </div>
-                        <div width="200px" height="20px" class="album_title"><center>Images</center></div>
+
                     </a>
                 </td>
                 <td class="album">
                     <a class="modal" id="28" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/video/'?>">
-                        <div width="200px" height="200px">
-                            <img src="<?=$baseUrl?>/images/video-player-icon.jpg" width="190px" height="154px" style="margin-left: -16px; margin-top: 49px">
+                        <div width="300px" height="250px">
+                            <img src="<?=$baseUrl?>/images/video.png" width="256px" height="200px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;  ">
                         </div>
-                        <div width="200px" height="20px" class="album_title"><center>Videos</center></div></a>
+                        </a>
                 </td>
                 <td class="album">
                     <a class="modal" id="27" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/ppk/'?>">
-                        <div width="200px" height="200px">
-                            <img src="<?=$baseUrl?>/images/11.png" width="190px" height="154px" style="margin-left: 35px; margin-top: 49px">
+                        <div width="300px" height="250px">
+                            <img src="<?=$baseUrl?>/images/pres.png" width="256px" height="200px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;">
                         </div>
-                        <div width="200px" height="20px" class="album_title"><center>Video advertisement</center></div>
-                    </a>
+                                            </a>
                 </td>
             </tr></tbody></table>
     </div><br>
