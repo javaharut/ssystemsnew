@@ -121,8 +121,8 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
 
     <!-- ThumbnailNavigator Skin Begin -->
     <div u="thumbnavigator" class="sliderb-T" style="position: absolute; bottom: 0px; left: 0px; height:45px; width:960px;">
-        <div style="filter: alpha(opacity=40); opacity:0.4; position: absolute; display: block;
-                background-color: #000000; top: 0px; left: 0px; width: 100%; height: 100%;">
+        <div style="filter: alpha(opacity=40); opacity:0.5; position: absolute; display: block;
+                background-color: #33ffff; top: 0px; left: 0px; width: 100%; height: 100%;">
         </div>
         <!-- Thumbnail Item Skin Begin -->
         <div u="slides">
@@ -240,7 +240,7 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
                                         <p> <?=$main_by_id->cdesc?></p>
                                 </div>
                             </div></div>
-                                                     
+
                     </td>
 
                 </tr>

@@ -7,7 +7,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 */
 
 @import url(navi.css);
-@import url(forms.css); 
+@import url(forms.css);
 
 body{
 	margin:0;
@@ -76,9 +76,9 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	width:570px;
 	}
 #container
-{	
+{
 	width: 601px;
-}	
+}
 
 #topbar1{
 	position:relative;
@@ -313,7 +313,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
 	}
-	
+
 /*#services p.readmore a{
 	padding:8px 15px;
 	font-weight:bold;
@@ -386,7 +386,7 @@ font-size: 13px ;
 color:black;
 width:450px;
 height: 97px;
-float:left; 
+float:left;
 margin-left: 11px;
 }
 
@@ -396,14 +396,14 @@ color:black;
 width:450px;
 height: 97px;
 float:left;
-margin-left: 11px;  
+margin-left: 11px;
 }
 #comments .commentlist li.comment_com
 {
 color:black;
 width:639px;
 height: 97px;
-margin: 0 auto;  
+margin: 0 auto;
 }
 #comments .commentlist .author .name{font-weight:bold;}
 #comments .commentlist .submitdate{font-size:smaller;}
@@ -425,7 +425,7 @@ margin: 0 auto;
 	padding:0;
 	list-style:none;
 	}
-	
+
 .flickrbox li{
 	display:block;
 	float:left;
@@ -481,7 +481,7 @@ margin: 0 auto;
 	text-align:right;
 	line-height:normal;
 	}
-	
+
 /* Featured Block */
 
 #column #featured a{
