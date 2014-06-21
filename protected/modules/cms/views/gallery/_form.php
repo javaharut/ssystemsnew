@@ -50,7 +50,7 @@
     <p>Use path when inserting video!!!</p>
 	<div class="row">
         <?php echo $form->labelEx($model,'path'); ?>
-        <?php echo $form->textField($model,'path',array('size'=>60,'maxlength'=>255)); ?>
+        <?php echo $form->textField($model,'path',array('size'=>60,'maxlength'=>255, 'placeholder'=>'video')); ?>
         <?php echo $form->error($model,'path'); ?>
     </div>
 
