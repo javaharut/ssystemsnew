@@ -94,23 +94,32 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
+
     public function actionGallery(){
-       // $gallery = Gallery::model()->findAll();
         $albom = Gallery::model()->findAllByAttributes(array('type' => 4));
-       // echo "<pre> ";var_dump($albom);exit;
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layouts 'protected/views/layouts/main.php'
+        $this->render('gallery', array('albom'=>$albom));
+    }
+
+    public function actionAlbom(){
+        $albom = Gallery::model()->findAllByAttributes(array('type' => 4));
         $this->render('albom', array('albom'=>$albom));
     }
 
-    public function actionImage($type){
-        // $gallery = Gallery::model()->findAll();
-        $albom = Gallery::model()->findAllByAttributes(array('type' => 1,''));
-        // echo "<pre> ";var_dump($albom);exit;
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layouts 'protected/views/layouts/main.php'
-        $this->render('albom', array('albom'=>$albom));
+    public function actionImage($id){
+        $images = Gallery::model()->findAllByAttributes(array('type' => 1,'parent_id'=>$id));
+        $this->render('image', array('images'=>$images));
     }
+
+    public function actionVideo(){
+        $videos = Gallery::model()->findAllByAttributes(array('type' => 2));
+        $this->render('video', array('videos'=>$videos));
+    }
+
+    public function actionPpk(){
+        $ppks = Gallery::model()->findAllByAttributes(array('type' => 3));
+        $this->render('ppk', array('ppks'=>$ppks));
+    }
+
     public function actionProduct(){
         $products = Product::model()->findAll();
 

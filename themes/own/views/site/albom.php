@@ -27,9 +27,9 @@ $this->renderPartial('_menu', false,false);
             <tr>
                 <?php foreach($albom as $val):?>
                 <td class="album">
-                    <a class="modal" id="29" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/image/'.$val->type?>">
+                    <a class="modal" id="29" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/image/'.$val->id?>">
                         <div width="200px" height="200px">
-                            <img src="<?=$baseUrl?>/images/up/albom/<?=$val->path?>" width="190px" height="154px" style="margin-left: -16px; margin-top: 49px">
+                            <img src="<?=$baseUrl?>/images/albom/<?=$val->path?>" width="190px" height="154px" style="margin-left: -16px; margin-top: 49px">
                         </div>
                         <div width="200px" height="20px" class="album_title"><center><?=$val->ctitle?></center></div>
                     </a>

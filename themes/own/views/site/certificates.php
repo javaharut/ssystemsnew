@@ -34,8 +34,8 @@ $this->renderPartial('_menu', false, false);
 
 
                                  ">
-                                    <a href="<?=$baseUrl?>/images/up/certificates/<?=$certificate->CER_PHOTO?>" rel="lightbox[plants]">
-                                        <img width="210" src="<?=$baseUrl?>/images/up/certificates/<?=$certificate->CER_PHOTO?>" alt="<?=$certificate->CER_TITLE?>" title="<?=$certificate->CER_TITLE?>">
+                                    <a href="<?=$baseUrl?>/images/certificates/<?=$certificate->CER_PHOTO?>" rel="lightbox[plants]">
+                                        <img width="210" src="<?=$baseUrl?>/images/certificates/<?=$certificate->CER_PHOTO?>" alt="<?=$certificate->CER_TITLE?>" title="<?=$certificate->CER_TITLE?>">
                                     </a>
                                 </div>
                                 <?php endforeach;?>
