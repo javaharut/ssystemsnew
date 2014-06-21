@@ -11,12 +11,12 @@
  
 //extend the plugin
 (function($){
-
 	//define the new for the plugin ans how to call it	
 	$.fn.contactable = function(options) {
 		//set default options  
 		var defaults = {
-			url: 'http://www.ssystems.am/inc/mail.php',
+//			url: 'http://www.ssystems.am/inc/mail.php',
+			url: baseUrl+'/ru/site/mail',
 			name: 'Name',
 			email: 'Email',
 			message : 'Message',
