@@ -1,10 +1,4 @@
-/*
-Template Name: BusinessToday
-File: Navigation CSS
-Author: OS Templates
-Author URI: http://www.os-templates.com/
-Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
-*/
+
 
 #topnav{
 	display:block;
@@ -42,10 +36,12 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #topnav li.last a{
 	margin-right:0;
 	}
-
+/*--------------------boxshadow-------------------------*/
 #topnav li a:hover, #topnav ul li.active a{
 	color:#FFFFFF;
-	box-shadow:inset 0px 7px 27px rgba(255,255,255, 0.9);
+    -webkit-box-shadow: inset 75px -1px 30px 50px rgba(62, 161, 241, 1);
+    -moz-box-shadow:    inset 75px -1px 30px 50px rgba(62, 161, 241, 1);
+    box-shadow:         inset 75px -1px 30px 50px rgba(62, 161, 241, 1);
 	}
 	
 #topnav li:first-child a:hover,#topnav ul li:first-child.active a{
@@ -68,7 +64,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	color:#FFFFFF;
 	background-color:#000000;
 	}
-	
+
 #topnav li li a:hover{
 	color:#FFFFFF;
 	}

@@ -240,6 +240,7 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
                                         <p> <?=$main_by_id->cdesc?></p>
                                 </div>
                             </div></div>
+                                                     
                     </td>
 
                 </tr>
