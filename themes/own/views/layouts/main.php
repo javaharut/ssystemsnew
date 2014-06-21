@@ -43,7 +43,6 @@
 <!--start contactable -->
 <div id="contactable"></div>
 
-
 <script>$(function(){$('#contactable').contactable({subject: 'feedback URL:'+location.href});});</script>
 <!--end contactable -->
 

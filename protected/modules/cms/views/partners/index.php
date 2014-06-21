@@ -1,18 +1,18 @@
 <?php
-/* @var $this SubProductsController */
+/* @var $this PartnersController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Sub Products',
+	'Partners',
 );
 
 $this->menu=array(
-	array('label'=>'Create SubProducts', 'url'=>array('create')),
-	array('label'=>'Manage SubProducts', 'url'=>array('admin')),
+	array('label'=>'Create Partners', 'url'=>array('create')),
+	array('label'=>'Manage Partners', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Sub Products</h1>
+<h1>Partners</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
