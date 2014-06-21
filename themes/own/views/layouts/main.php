@@ -22,7 +22,9 @@
 
     <script type="text/javascript">var _siteRoot='index.php',_root='index.php';</script>
     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/scripts.js"></script>
-
+    <script>
+        var baseUrl = '<?=Yii::app()->request->baseUrl?>';
+    </script>
     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery.validate.pack.js"></script>
     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery.contactable.min.js"></script>
     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery.contactable.js"></script>

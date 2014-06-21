@@ -297,7 +297,7 @@ class SiteController extends Controller
         }
     }
 
-    public function actionSendMail()
+    public function actionMail()
     {
         $email = $_POST['email'];
         $name = $_POST['name'];
