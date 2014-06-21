@@ -39,8 +39,8 @@
 				array('label'=>'Banner', 'url'=>array('/cms/banner'), 'visible'=>!Yii::app()->user->isGuest),
 			    array('label'=>'products', 'url'=>array('/cms/product'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'certificates', 'url'=>array('/cms/certificates'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Map objects', 'url'=>array('/cms/mapobjects'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Categories', 'url'=>array('/cms/categories'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Gallery', 'url'=>array('/cms/gallery'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Partners', 'url'=>array('/cms/partners'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/cms/main/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/cms/main/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

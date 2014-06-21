@@ -40,7 +40,7 @@
             array(
                 'id'=>'uploadFile',
                 'config'=>array(
-                    'action'=>Yii::app()->createUrl('/cms/banner/upload'),
+                    'action'=>Yii::app()->createUrl('/cms/certificates/upload'),
                     'allowedExtensions'=>array("jpg", "jpeg", "png"),//array("jpg","jpeg","gif","exe","mov" and etc...
                     'sizeLimit'=>5*1024*1024,// maximum file size in bytes
                     'minSizeLimit'=>0*1024*1024,// minimum file size in bytes

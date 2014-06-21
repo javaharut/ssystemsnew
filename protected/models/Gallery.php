@@ -18,6 +18,7 @@
  */
 class Gallery extends CActiveRecord
 {
+    public $image;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -42,6 +43,7 @@ class Gallery extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('type, parent_id', 'numerical', 'integerOnly'=>true),
+            //array('image', 'file', 'types'=>''),
 			array('title, title_ru, title_en, path', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -72,9 +74,11 @@ class Gallery extends CActiveRecord
 			'title' => 'Title',
 			'title_ru' => 'Title Ru',
 			'title_en' => 'Title En',
-			'path' => 'Path',
+			'path' => 'File Path',
 			'type' => 'Type',
-			'parent_id' => 'Parent',
+			'parent_id' => 'Parent album',
+            'image'=>'File'
+
 		);
 	}
 

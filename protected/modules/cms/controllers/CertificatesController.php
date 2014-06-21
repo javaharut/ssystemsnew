@@ -99,13 +99,13 @@ class CertificatesController extends SecureController
 		{
 			$model->attributes=$_POST['Certificates'];
 
-                if(file_exists($_SERVER['DOCUMENT_ROOT'] . Yii::app()->baseUrl . '/images/banner/uploaded.png')) {
-                    Yii::app()->ih->load($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/banner/uploaded.png')
-                        ->save($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/banner/' . $model->id . '.png');
+                if(file_exists($_SERVER['DOCUMENT_ROOT'] . Yii::app()->baseUrl . '/images/certificates/uploaded.png')) {
+                    Yii::app()->ih->load($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/certificates/uploaded.png')
+                        ->save($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/certificates/' . $model->id . '.png');
 
                     $model->CER_PHOTO = $model->id . '.png';
 
-                    unlink($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/banner/uploaded.png');
+                    unlink($_SERVER['DOCUMENT_ROOT'] .Yii::app()->baseUrl . '/images/certificates/uploaded.png');
                 }
             if($model->save()) {
                 $this->redirect(array('view','id'=>$model->id));
