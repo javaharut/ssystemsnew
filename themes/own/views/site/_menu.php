@@ -16,7 +16,7 @@
                     array('label'=>Yii::t('language','partners'), 'url'=>array('product/index')),
                     array('label'=>Yii::t('language','certificates'), 'url'=>array('site/certificates')),
                     array('label'=>Yii::t('language','about'), 'url'=>array('site/about')),
-                    array('label'=>Yii::t('language','gallery'), 'url'=>array('product/index')),
+                    array('label'=>Yii::t('language','gallery'), 'url'=>array('site/gallery')),
                     array('label'=>Yii::t('language','contacts'), 'url'=>array('product/index')),
                 ),
             ));
