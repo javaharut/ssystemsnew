@@ -25,6 +25,23 @@ class Partners extends CActiveRecord
 		return 'partners';
 	}
 
+    public function getctitle() {
+        if(Yii::app()->language == "am")
+            return $this->title;
+        else if(YII::app()->language == "ru")
+            return $this->title_ru;
+        else
+            return $this->title_en;
+    }
+
+    public function getcdesc() {
+        if(Yii::app()->language == "am")
+            return $this->desc;
+        else if(YII::app()->language == "ru")
+            return $this->desc_ru;
+        else
+            return $this->desc_en;
+    }
 	/**
 	 * @return array validation rules for model attributes.
 	 */

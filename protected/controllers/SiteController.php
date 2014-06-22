@@ -134,15 +134,25 @@ class SiteController extends Controller
         $this->render('_products', array('product'=>$product));
     }
 
+    public function actionPartner(){
+        $partners = Partners::model()->findAll();
+
+        // renders the view file 'protected/views/site/index.php'
+        // using the default layouts 'protected/views/layouts/main.php'
+        $this->render('partners', array('partners'=>$partners));
+    }
+
+    public function actionPartners($id)
+    {
+        $partner = Partners::model()->findByPk($id);
+
+        $this->render('_partners', array('partner'=>$partner));
+    }
+
     public function actionCertificates()
     {
         $certificates = Certificates::model()->findAll();
         $this->render('certificates', array('certificates'=>$certificates));
-    }
-
-    public function actionPartner()
-    {
-        $this->render('partner');
     }
 
     public function actionAbout()
