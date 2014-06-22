@@ -16,12 +16,11 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Product #<?php echo $model->id; ?></h1>
+<h1>View Product <?php echo $model->title; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
 		'keyword',
 		'keyword_ru',
 		'keyword_en',
@@ -31,9 +30,9 @@ $this->menu=array(
 		'title',
 		'title_ru',
 		'title_en',
-		'desc',
-		'desc_ru',
-		'desc_en',
+		'desc:html',
+		'desc_ru:html',
+		'desc_en:html',
 		'img',
 	),
 )); ?>

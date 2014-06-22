@@ -24,7 +24,7 @@
         var baseUrl = '<?=Yii::app()->request->baseUrl?>';
     </script>
     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery.validate.pack.js"></script>
-    <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery.contactable.min.js"></script>
+    <!--<script type="text/javascript" src="<?/*=Yii::app()->request->baseUrl*/?>/js/jquery.contactable.min.js"></script>-->
     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery.contactable.js"></script>
 
     <link rel="stylesheet" href="<?=Yii::app()->request->baseUrl?>/css/contactable.css" type="text/css" />

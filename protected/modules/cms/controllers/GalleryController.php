@@ -76,7 +76,7 @@ class GalleryController extends SecureController
                 if(isset($model->image)) {
                     $model->image->saveAs('images/files/'.$model->id.".".$model->image->ExtensionName);
 
-                    $model->path = $model->getPrimaryKey().".".$model->image->ExtensionName;
+                    $model->path = $model->id.".".$model->image->ExtensionName;
                     $model->save();
 
                 }
@@ -112,8 +112,12 @@ class GalleryController extends SecureController
 			$model->attributes=$_POST['Gallery'];
             $model->image=CUploadedFile::getInstance($model,'image');
 			if($model->save()) {
-                if(isset($model->image))
+                if(isset($model->image)) {
                     $model->image->saveAs('images/files/'.$model->id.".".$model->image->ExtensionName);
+                    $model->path = $model->id.".".$model->image->ExtensionName;
+                    $model->save();
+                }
+
                 $this->redirect(array('view','id'=>$model->id));
             }
 

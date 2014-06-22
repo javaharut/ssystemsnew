@@ -140,52 +140,9 @@ class SiteController extends Controller
         $this->render('certificates', array('certificates'=>$certificates));
     }
 
-
-    /*
-     *  Single product action
-     */
-    public function actionSubItem($id)
+    public function actionPartner()
     {
-
-        $item = Items::model()->findByPk($id);
-
-        $this->render("subItem",
-            array("item"=>$item));
-    }
-
-
-    public function actionBlogs() {
-
-        $criteria=new CDbCriteria();
-
-        $criteria->condition = 'language=:lang ORDER BY date desc';
-        $criteria->params = array(':lang'=>Yii::app()->language);
-
-        $count=Blog::model()->count($criteria);
-        $pages=new CPagination($count);
-
-        $pages->pageSize=5;
-        $pages->applyLimit($criteria);
-
-        $blogs = Blog::model()->findAll($criteria);
-
-       // if(empty($blogs))
-        //    $this->redirect("index");
-
-        $this->render("blogs", array('blogs'=>$blogs, 'pages' => $pages));
-    }
-
-    public function actionBlog($id) {
-
-        $blog = Blog::model()->find("language=:x AND alias=:alias", array(':x'=>Yii::app()->language, ":alias"=>$id));
-
-
-        if(empty($blog))
-            $this->redirect(array("blogs"));
-
-        //print_r($blog);
-
-        $this->render("blog", array("blog"=>$blog));
+        $this->render('partner');
     }
 
     public function actionAbout()
@@ -203,75 +160,9 @@ class SiteController extends Controller
         $this->render("contacts");
     }
 
-    public function actionSolutions()
-    {
-        $criteria=new CDbCriteria();
-
-        $criteria->condition = 'lang=:lang';
-        $criteria->params = array(':lang'=>Yii::app()->language);
-        $solutions = Categories::model()->findAll($criteria);
-
-        $criteria=new CDbCriteria();
-
-        $criteria->condition = 'lang=:lang';
-        $criteria->params = array(':lang'=>Yii::app()->language);
-
-        $items = Yii::app()->db->createCommand()
-            ->select('*')
-            ->from('item_categries c')
-            ->join('items i', 'c.item_id = i.id')
-            ->where('cat_id=:id', array(':id'=>1))
-            ->having('i.main=1 AND i.lang ="'.Yii::app()->language.'"')
-            ->queryAll();
-
-        $category = Categories::model()->findByPk(1);
-
-        $this->render("solution", array('solutions'=>$solutions, 'items'=>$items, 'category'=>$category));
-    }
-
     /*
      *   !!!   Region for ajax calls  !!!
      */
-
-    public function actionGetItems() {
-
-        $items = Items::model()->findAll("subproduct_id=:pr_id", array(':pr_id'=>$_POST['subid']));
-        $this->renderPartial("_products", array('items'=>$items), false, true);
-    }
-
-    public function actionGetitemssbycat() {
-
-        if(Yii::app()->request->isAjaxRequest) {
-            $criteria=new CDbCriteria();
-
-            $criteria->condition = 'lang=:lang';
-            $criteria->params = array(':lang'=>Yii::app()->language);
-
-            if($_POST['all'] == 0) {
-                $items = Yii::app()->db->createCommand()
-                    ->select('*')
-                    ->from('item_categries c')
-                    ->join('items i', 'c.item_id = i.id')
-                    ->where('cat_id=:id', array(':id'=>$_POST['catid']))
-                    ->having('i.main=1 AND i.lang ="'.Yii::app()->language.'"')
-                    ->queryAll();
-            }
-            else {
-                $items = Yii::app()->db->createCommand()
-                    ->select('*')
-                    ->from('item_categries c')
-                    ->join('items i', 'c.item_id = i.id')
-                    ->where('cat_id=:id', array(':id'=>$_POST['catid']))
-                    ->having('i.lang ="'.Yii::app()->language.'"')
-                    ->queryAll();
-            }
-
-
-            $category = Categories::model()->findByPk($_POST['catid']);
-
-            $this->renderPartial("_solution", array('items'=>$items, 'category'=>$category), false, true);
-        }
-    }
 
     public function actionMail()
     {

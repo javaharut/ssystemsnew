@@ -30,8 +30,8 @@ $this->renderPartial('_menu', false, false);
                                 <!--                                <div class="bswr bgfon" style="margin-bottom:11px;">Сертификаты</div>-->
                                 <?php foreach($images as $image):?>
                                     <div class="hovergallery" style="width: 210px; height: 300px; overflow: hidden; padding: 10px; margin: 5px; float: left;">
-                                        <a href="<?=$baseUrl?>/images/img/<?=$image->path?>" rel="lightbox[plants]">
-                                            <img width="210" src="<?=$baseUrl?>/images/img/<?=$image->path?>" alt="<?=$image->ctitle?>" title="<?=$image->ctitle?>">
+                                        <a href="<?=$baseUrl?>/images/files/<?=$image->path?>" rel="lightbox[plants]">
+                                            <img width="210" src="<?=$baseUrl?>/images/files/<?=$image->path?>" alt="<?=$image->ctitle?>" title="<?=$image->ctitle?>">
                                         </a>
                                     </div>
                                 <?php endforeach;?>
