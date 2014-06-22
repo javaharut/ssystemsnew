@@ -77,6 +77,10 @@
 
 }
 
+.more:hover {
+    background: #2f96b4;
+}
+
 .product_header {
     text-align: left;
     padding: 5px 5px 5px 20px;

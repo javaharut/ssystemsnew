@@ -27,10 +27,15 @@
 	margin:0;
 	padding:13px 20px;
 	color:#FFFFFF;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 	}
 
 #topnav ul ul li a:link, #topnav ul ul li a:visited{
 	border:none;
+
 	}
 
 #topnav li.last a{
@@ -61,6 +66,7 @@
 	font-weight:normal;
 	color:#FFFFFF;
 	background-color:#000000;
+
 	}
 
 #topnav li li a:hover{
@@ -78,7 +84,7 @@
 	border-bottom:1px solid #FFFFFF;
 	}
 
-#topnav li ul a{width:140px;}
+#topnav li ul a{width:140px; }
 
 #topnav li ul ul{margin:-32px 0 0 0;}
 

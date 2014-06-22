@@ -30,7 +30,7 @@ $this->renderPartial('_menu', false,false);
             <div class="img_wrap"><img class="product_img_main" src="<?=$baseUrl?>/images/product/<?=$product->id?>.png"/></div>
             <div class="product_title"><?=$product->cdesc?></div>
             <div class="clear"></div>
-            <a href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/products/'.$product->id ?>"><div class="more"><?=Yii::t('language','more')?></div></a>
+            <a href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/product/'?>"><div class="more"><?=Yii::t('language','back')?></div></a>
 
         <div class="clear"></div>
     </div>
