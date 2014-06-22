@@ -49,6 +49,12 @@
         <a href="<?=Yii::app()->request->baseUrl?>"><img src="<?=Yii::app()->request->baseUrl?>/css/images/<?= Yii::t('language','logo')?>" class="logo" alt="" /></a>
     </div>
 
+
+    <div class='contact_head'>
+        <div class="contact_head_name">Solid Systems</div>
+    </div>
+
+
     <div class="langs">
         <?php
         $links = Yii::app()->urlManager->getLanguageImageLinks(array(), true, array(),array("class"=>"lang"));
@@ -57,27 +63,8 @@
         ?>
     </div>
 
-    <div class='contact_head'>
-        <span class="name" style="
-
-    margin: 0px 150px 10px 0px;
-    font-family: Segoe, Segoe UI, Helvetica Neue, Arial, sans-serif;
-    color: #FFFFFF;
-    padding: 5;
-    font-weight: bold;
-    text-align: left;
-    text-shadow:0px 1px 13px rgba(0, 0, 0, 0.96);
-    font-size: 36px;
-
-         ">Solid Systems</span><br />
-        <div class="icon"><a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373"target="_blank">
-                <img src="css/images/fb.png" alt="facebook" class="facebook" width="35px" height="35px"> </a>
-            <a href="http://omnicomm.ru/" target="_blank">
-                <img src="css/images/omn.png" alt="omnicomm" class="omnicomm" width="35px" height="35px" style="margin-left: 6px"> </a>
-            </div>
-<div class="sl " weight=" 100px" height="50px" >
-    <?= Yii::t('language','header')?>
-</div>
+    <div class="contact_head_text">
+        <?= Yii::t('language','header')?>
     </div>
 
 

@@ -129,25 +129,8 @@ class SiteController extends Controller
     }
     public function actionProducts($id)
     {
-//        $prod = Products::model()->find("lang=:x AND alias=:alias", array(':x'=>Yii::app()->language,':alias'=>$id,));
-//        $subs = SubProducts::model()->findAll("product_id=:pr_id", array(':pr_id'=>$prod->id));
-//
-//        if(!empty($subs))
-//            $items = Items::model()->findAll("subproduct_id=:pr_id", array(':pr_id'=>$subs[0]->id));
-//
-//        if(!isset($items))
-//            $this->redirect(array("index"));
-//
-////        echo "<pre>";
-////        print_r($items);
-////        exit;
-//
-//        $this->render('products',
-//            array('sub_products'=>$subs, 'items'=>$items));
         $product = Product::model()->findByPk($id);
 
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layouts 'protected/views/layouts/main.php'
         $this->render('_products', array('product'=>$product));
     }
 
@@ -157,13 +140,6 @@ class SiteController extends Controller
         $this->render('certificates', array('certificates'=>$certificates));
     }
 
-    public function actionFromWhere()
-    {
-
-        $objects = MapObjects::model()->findAll();
-
-        $this->render("fromwhere", array("objects"=>$objects));
-    }
 
     /*
      *  Single product action

@@ -1,0 +1,85 @@
+.container {
+    width: 99%;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -icab-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.product {
+    margin: 0px 20px 10px 20px;
+    padding: 15px;
+    float: left;
+    width:400px;
+
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -icab-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.product_img {
+    max-height:150px;
+    float: left;
+}
+
+.product_title {
+    font-size: 15px;
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 33px 10px 10px 0px;
+    font-weight: bold;
+}
+
+.more {
+    margin-top: 5px;
+    float: right;
+    padding: 5px 7px;
+    font-weight: bold;
+    color: #FFFFFF !important;
+    background: #29527E;
+    background-position: 1px;
+    moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -icab-border-radius: 4px;
+    border-radius: 4px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3D4F5), to(#1A3450));
+    background-image: -webkit-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
+}
+
+.product_header {
+    text-align: left;
+    padding: 5px 5px 5px 20px;
+    border-bottom: 2px dotted blue;
+    font-size: large;
+}
+
+.product_img_main {
+    float: left;
+    max-width: 400px;
+    margin: 12px 35px 5px 2px;
+}
