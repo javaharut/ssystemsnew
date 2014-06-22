@@ -72,12 +72,14 @@
     font-size: 36px;
 
          ">Solid Systems</span><br />
-        <div class="icon"> Follow us <a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373"target="_blank">
+        <div class="icon"><a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373"target="_blank">
                 <img src="css/images/fb.png" alt="facebook" class="facebook" width="35px" height="35px"> </a>
             <a href="http://omnicomm.ru/" target="_blank">
                 <img src="css/images/omn.png" alt="omnicomm" class="omnicomm" width="35px" height="35px" style="margin-left: 6px"> </a>
             </div>
-
+<div class="sl " weight=" 100px" height="50px" >
+    <?= Yii::t('language','header')?>
+</div>
     </div>
 
 

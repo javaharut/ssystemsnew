@@ -68,19 +68,25 @@ div.icon {
 }
 
 .facebook {
-margin-top: -15px;
+margin-top: 15px;
     -webkit-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
     -moz-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
     box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
 }
 
 .omnicomm {
-    margin-top: -15px;
+    margin-top: 15px;
     -webkit-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
     -moz-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
     box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
 }
 
+.sl {
+    float: left;
+    margin-top: -10px;
+    margin-left: 40px;
+    margin-right: 0;
+}
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
 div.wrapper{
