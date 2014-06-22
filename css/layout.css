@@ -43,10 +43,43 @@ a{outline:none; text-decoration:none;}
 .fb {
     background: url(css/images/fb.png) no-repeat;
     float: right;
-
-
 }
 */
+
+.icon {
+/* float: right;
+margin-left: 159px;
+margin-top: -39px ; */
+    float: right;
+    width: 90px;
+    height: 50px;
+padding: 10px 10px 10px 10px;
+}
+div.icon {
+
+    padding: 0 0 0 0;
+    margin-top: -48px;
+    margin-left : 90px ;
+    margin-right : 16px ;
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.facebook {
+margin-top: -15px;
+    -webkit-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
+    -moz-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
+    box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
+}
+
+.omnicomm {
+    margin-top: -15px;
+    -webkit-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
+    -moz-box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
+    box-shadow: 1px 1px 13px -3px rgba(0,255,234,1);
+}
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
@@ -337,6 +370,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	padding:6px 0;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+
    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
 font-size: 13px ;
     text-weight : bold ;

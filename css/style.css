@@ -143,7 +143,7 @@ div#topnav ul li:nth-last-child(2) > a:hover > div#submenu{
 visibility:visible;
 }
 .contact_head {
-    line-height: 22px;
+    line-height: 45px;
 }
 .contact_head span {
 float:right;

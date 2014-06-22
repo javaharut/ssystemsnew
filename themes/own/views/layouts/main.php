@@ -8,8 +8,7 @@
     <meta name="author" content="Omnicomm Armenia">
     <meta name="language" content="en" />
     <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/css/images/favicon.ico" type="image/x-icon" />
-    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery-1.11.1.js"></script>
+     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery-1.11.1.js"></script>
 
     <script type="text/javascript">
         var lang = "<?=Yii::app()->language?>";
@@ -73,9 +72,12 @@
     font-size: 36px;
 
          ">Solid Systems</span><br />
-        <div class="author_head" style="font-size: 13px">Адрес: <span class="name"> Армения,0048, г.Ереван, Бекназарян 5/7</span></div><br />
-        <div class="author_head" style="font-size: 13px">Телефон: <span class="name">+374(77)-44-77-11; +374(95)-10-03-01; +374(60)-50-07-06</span></div>
-        <div class="author_head" style="font-size:13px;margin-left:85px;">E-mail: <span class="name">info@ssystems.am</span></div>
+        <div class="icon"> Follow us <a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373"target="_blank">
+                <img src="css/images/fb.png" alt="facebook" class="facebook" width="35px" height="35px"> </a>
+            <a href="http://omnicomm.ru/" target="_blank">
+                <img src="css/images/omn.png" alt="omnicomm" class="omnicomm" width="35px" height="35px" style="margin-left: 6px"> </a>
+            </div>
+
     </div>
 
 
