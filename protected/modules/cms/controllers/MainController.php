@@ -47,7 +47,7 @@ class MainController extends SecureController
         if(isset($_POST['Main']))
         {
             $model->attributes=$_POST['Main'];
-            if($model->validate())
+            if($model->save())
             {
                 // form inputs are valid, do something here
                 Yii::app()->user->setFlash("success","Saved!!!");
@@ -70,7 +70,7 @@ class MainController extends SecureController
         if(isset($_POST['Main']))
         {
             $model->attributes=$_POST['Main'];
-            if($model->validate())
+            if($model->save())
             {
                 // form inputs are valid, do something here
                 Yii::app()->user->setFlash("success","Saved!!!");

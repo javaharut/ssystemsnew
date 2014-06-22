@@ -45,17 +45,15 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
+        array(
+            'type' => 'raw',
+            'value' => 'CHtml::image(Yii::app()->baseUrl . "/images/partner/" . $data->id.".png","",
+                        array("width"=>"100px"))'
+        ),
 		'title',
 		'title_ru',
 		'title_en',
-		'desc',
-		'desc_ru',
-		/*
-		'desc_en',
-		'img',
 		'url',
-		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

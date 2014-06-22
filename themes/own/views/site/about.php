@@ -1,8 +1,15 @@
 <?php
 
 $baseUrl = Yii::app()->baseUrl;
-Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/style2.css');
- $this->renderPartial('_menu', false,false);
+$cs = Yii::app()->getClientScript();
+
+$this->setPageTitle(Yii::app()->name ."-". $main_by_id->getctitle());
+
+$cs->registerMetaTag($main_by_id->ckeyword, 'keyword');
+$cs->registerMetaTag($main_by_id->ctitle, 'title');
+$cs->registerMetaTag($main_by_id->cmetadesc, 'description');
+
+$this->renderPartial('_menu', false,false);
 ?>
 
 <div align="center">
@@ -27,7 +34,6 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/style2.css')
                                     <p>
                                     </p><p style="text-align: center;">&nbsp;</p>
                                     <h1 style="text-align: center;"><span style="color: #003366;">&nbsp;<strong><?=$main_by_id->ctitle?></strong></span></h1>
-                                    <p style="float:right;margin-bottom: 50px "><?=$main_by_id->cmetadesc?></p><br/>
                                     <p> <?=$main_by_id->cdesc?></p>
                                 </div>
                             </div></div>

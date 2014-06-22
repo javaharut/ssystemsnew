@@ -22,15 +22,15 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('desc')); ?>:</b>
-	<?php echo CHtml::encode($data->desc); ?>
+	<?php echo CHtml::decode($data->desc); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('desc_ru')); ?>:</b>
-	<?php echo CHtml::encode($data->desc_ru); ?>
+	<?php echo CHtml::decode($data->desc_ru); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('desc_en')); ?>:</b>
-	<?php echo CHtml::encode($data->desc_en); ?>
+	<?php echo CHtml::decode($data->desc_en); ?>
 	<br />
 
 	<?php /*

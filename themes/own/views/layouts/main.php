@@ -3,10 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Omnicomm Armenia, Solid Systems">
-    <meta name="keywords" content="Omnicomm,Armenia,Solid,Systems">
     <meta name="author" content="Omnicomm Armenia">
-    <meta name="language" content="en" />
+    <meta name="language" content="ru" />
     <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/css/images/favicon.ico" type="image/x-icon" />
      <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery-1.11.1.js"></script>
 

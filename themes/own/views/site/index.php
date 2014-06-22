@@ -1,12 +1,19 @@
 <?php
 /* @var $this SiteController */
 /* @var $banners Banner[] */
+/* @var $main_by_id Main */
 
 $baseUrl = Yii::app()->baseUrl;
 $cs = Yii::app()->getClientScript();
 $cs->registerScriptFile($baseUrl.'/js/jssor.core.js');
 $cs->registerScriptFile($baseUrl.'/js/jssor.utils.js');
 $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
+
+$this->setPageTitle(Yii::app()->name ."-". $main_by_id->getctitle());
+
+$cs->registerMetaTag($main_by_id->ckeyword, 'keyword');
+$cs->registerMetaTag($main_by_id->ctitle, 'title');
+$cs->registerMetaTag($main_by_id->cmetadesc, 'description');
 
 ?>
 
@@ -103,7 +110,7 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
         <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                 background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
         </div>
-        <div style="position: absolute; display: block; background: url(css/images/loading.gif) no-repeat center center;
+        <div style="position: absolute; display: block; background: url(<?=Yii::app()->baseUrl?>/css/images/loading.gif) no-repeat center center;
                 top: 0px; left: 0px;width: 100%;height:100%;">
         </div>
     </div>
@@ -180,7 +187,7 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
             position: absolute;
             cursor: pointer;
             display: block;
-            background: url(css/images/a17.png) no-repeat;
+            background: url(<?=Yii::app()->baseUrl?>/css/images/a17.png) no-repeat;
             overflow:hidden;
         }
         .jssora05l { background-position: -10px -40px; }
@@ -224,8 +231,6 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
 
 
         <div>
-
-
             <table border="0" cellspacing="5px">
                 <tbody><tr>
                     <td valign="top">
@@ -236,7 +241,6 @@ $cs->registerScriptFile($baseUrl.'/js/jssor.slider.js');
                                     <p>
                                     </p><p style="text-align: center;">&nbsp;</p>
                                     <h1 style="text-align: center;"><span style="color: #003366;">&nbsp;<strong><?=$main_by_id->ctitle?></strong></span></h1>
-                                        <p style="float:right;margin-bottom: 50px "><?=$main_by_id->cmetadesc?></p><br/>
                                         <p> <?=$main_by_id->cdesc?></p>
                                 </div>
                             </div></div>
