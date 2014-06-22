@@ -11,10 +11,10 @@
                     array('label'=>Yii::t('language','main'), 'url'=>array('site/index')),
                     array('label'=>Yii::t('language','about'), 'url'=>array('site/about')),
                     array('label'=>Yii::t('language','products'), 'url'=>array('site/product')),
-                    array('label'=>Yii::t('language','partners'), 'url'=>array('product/index')),
+                    array('label'=>Yii::t('language','partners'), 'url'=>array('site/partner')),
                     array('label'=>Yii::t('language','certificates'), 'url'=>array('site/certificates')),
                     array('label'=>Yii::t('language','gallery'), 'url'=>array('site/gallery')),
-                    array('label'=>Yii::t('language','contacts'), 'url'=>array('product/index')),
+                    array('label'=>Yii::t('language','contacts'), 'url'=>array('site/contacts')),
                 ),
             ));
             ?>

@@ -137,7 +137,7 @@ div#header1 div#slide-holder div#slide-controls p#slide-nav a {
 background-size: 12px;
 }
 div#nav ul li a {
-background : url(images/nav.png) no-repeat;
+/*background : url(images/nav.png) no-repeat;*/
 }
 div#topnav ul li:nth-last-child(2) > a:hover > div#submenu{
 visibility:visible;
@@ -170,9 +170,22 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
     background: -ms-linear-gradient(top,  rgba(43,107,171,1) 15%,rgba(43,107,171,1) 22%,rgba(43,107,171,1) 80%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(43,107,171,1) 15%,rgba(43,107,171,1) 22%,rgba(43,107,171,1) 80%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6bab', endColorstr='#2b6bab',GradientType=0 ); /* IE6-9 */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(25, 50, 50, 1);
+    -moz-box-shadow:    0px 0px 28px 0px rgba(25, 50, 50, 1);
+    box-shadow:         0px 0px 28px 0px rgba(25, 50, 50, 1);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -icab-border-radius: 4px;
+    border-radius: 4px;
+}
 
 
-    <style>
     .font-style {
     font-family: Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     color: #FFFFFF;
@@ -182,24 +195,7 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
     text-align: left;
     text-shadow: -2px 1px 7px rgba(255, 255, 255, 0.91);
 }
-    </style>
 
-
-height: 100px;
-padding: 10px;
-margin-top: 5px;
-margin-bottom: 5px;
-    -webkit-box-shadow: 0px 0px 28px 0px rgba(25, 50, 50, 1);
-    -moz-box-shadow:    0px 0px 28px 0px rgba(25, 50, 50, 1);
-    box-shadow:         0px 0px 28px 0px rgba(25, 50, 50, 1);
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
--khtml-border-radius: 4px;
--o-border-radius: 4px;
--ms-border-radius: 4px;
--icab-border-radius: 4px;
-border-radius: 4px;
-}
 
 .author_head {
 float:left;
@@ -256,7 +252,7 @@ margin-left:84px;
 	float: left;
 	width: 240px;
 	height: 56px;
-	background-image: url(../images/bg_block.png);
+	/*background-image: url(../images/bg_block.png);*/
 	border: 1px solid #efefef;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
 	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
@@ -265,7 +261,7 @@ margin-left:84px;
 	-webkit-border-radius: 6px;
 	-khtml-border-radius: 6px;
 	border-radius: 6px;
-	behavior: url(/pie.htc);
+	/*behavior: url(/pie.htc);*/
 	padding: 17px;
 	margin-bottom: 20px;
 	display: block;
@@ -276,7 +272,7 @@ margin-left:84px;
 	float: left;
 	width: 240px;
 	height: 56px;
-	background-image: url(../images/bg_block.png);
+	/*background-image: url(../images/bg_block.png);*/
 	border: 1px solid #efefef;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
 	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
@@ -285,7 +281,7 @@ margin-left:84px;
 	-webkit-border-radius: 6px;
 	-khtml-border-radius: 6px;
 	border-radius: 6px;
-	behavior: url(/pie.htc);
+	/*behavior: url(/pie.htc);*/
 	padding: 17px;
 	margin-bottom: 20px;
 	display: block;
@@ -327,60 +323,59 @@ margin-left: 43px;
 {
 background: #FAFAFA;
 }
-.bswr
-{
-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
--moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
--webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
--khtml-border-radius: 4px;
--o-border-radius: 4px;
--ms-border-radius: 4px;
--icab-border-radius: 4px;
-border-radius: 4px;
-background:white;
+.bswr {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -icab-border-radius: 4px;
+    border-radius: 4px;
+    background:white;
+    margin-top: 10px;
 }
-.bgfon
-{
-padding: 5px 7px;
-font-weight: bold;
-color: #FFFFFF !important;
-background: #29527E;
-background-position: 1px;
-moz-border-radius: 4px;
--webkit-border-radius: 4px;
--khtml-border-radius: 4px;
--o-border-radius: 4px;
--ms-border-radius: 4px;
--icab-border-radius: 4px;
-border-radius: 4px;
-background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3D4F5), to(#1A3450));
-background-image: -webkit-linear-gradient(top, #A3D4F5, #1A3450);
-background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
-background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
-background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
+
+.bgfon {
+    padding: 5px 7px;
+    font-weight: bold;
+    color: #FFFFFF !important;
+    background: #29527E;
+    background-position: 1px;
+    moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -icab-border-radius: 4px;
+    border-radius: 4px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3D4F5), to(#1A3450));
+    background-image: -webkit-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
 }
-.bgfonwp
-{
-font-weight: bold;
-color: #FFFFFF !important;
-background: #29527E;
-background-position: 1px;
-moz-border-radius: 4px;
--webkit-border-radius: 4px;
--khtml-border-radius: 4px;
--o-border-radius: 4px;
--ms-border-radius: 4px;
--icab-border-radius: 4px;
-border-radius: 4px;
-background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3D4F5), to(#1A3450));
-background-image: -webkit-linear-gradient(top, #A3D4F5, #1A3450);
-background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
-background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
-background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
+.bgfonwp {
+    font-weight: bold;
+    color: #FFFFFF !important;
+    background: #29527E;
+    background-position: 1px;
+    moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -icab-border-radius: 4px;
+    border-radius: 4px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3D4F5), to(#1A3450));
+    background-image: -webkit-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -moz-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -ms-linear-gradient(top, #A3D4F5, #1A3450);
+    background-image: -o-linear-gradient(top, #A3D4F5, #1A3450);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3D4F5', endColorstr='#1A3450');
 }
 
 
