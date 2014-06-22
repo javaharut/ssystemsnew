@@ -62,9 +62,11 @@
         <?php echo $form->error($model,'image'); ?>
     </div>
 
-    <?php
-
-    ?>
+    <?php if(!$model->isNewRecord): ?>
+        <?php if($model->type ==1 || $model->type ==2 ||$model->type ==2 ||$model->type ==4):?>
+            <img width = "200" src ="<?=Yii::app()->baseUrl?>/images/files/<?=$model->path?>"/>
+            <?php endif; ?>
+    <?php endif; ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'parent_id'); ?>
