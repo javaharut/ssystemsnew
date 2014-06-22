@@ -28,7 +28,7 @@ $this->renderPartial('_menu', false,false);
                 <td class="album">
                     <a class="modal" id="29" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/albom/'?>">
                         <div width="300px" height="250px">
-                            <img src="<?=$baseUrl?>/images/images.png" width="256px" height="200px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;">
+                            <img src="<?=$baseUrl?>/images/images.png" width="235px" height="180px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;">
                         </div>
 
                     </a>
@@ -36,14 +36,14 @@ $this->renderPartial('_menu', false,false);
                 <td class="album">
                     <a class="modal" id="28" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/video/'?>">
                         <div width="300px" height="250px">
-                            <img src="<?=$baseUrl?>/images/video.png" width="256px" height="200px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;  ">
+                            <img src="<?=$baseUrl?>/images/video.png" width="235px" height="180px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;  ">
                         </div>
                         </a>
                 </td>
                 <td class="album">
                     <a class="modal" id="27" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/ppk/'?>">
                         <div width="300px" height="250px">
-                            <img src="<?=$baseUrl?>/images/pres.png" width="256px" height="200px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;">
+                            <img src="<?=$baseUrl?>/images/pres.png" width="235px" height="180px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;">
                         </div>
                                             </a>
                 </td>
