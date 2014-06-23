@@ -37,6 +37,7 @@ $this->renderPartial('_menu', false,false);
                     <a class="modal" id="28" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/video/'?>">
                         <div width="300px" height="250px">
                             <img src="<?=$baseUrl?>/images/video.png" class="vid" width="235px" height="180px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;  ">
+
                         </div>
                         </a>
                 </td>
