@@ -34,9 +34,6 @@
 	<br />
 
 
-        <?php if($data->type ==1 || $data->type ==2 ||$data->type ==2 ||$data->type ==4):?>
-            <img width = "200" src ="<?=Yii::app()->baseUrl?>/images/files/<?=$data->path?>"/>
-        <?php endif; ?>
 
 
 </div>
