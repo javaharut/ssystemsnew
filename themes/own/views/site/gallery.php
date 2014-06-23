@@ -1,7 +1,6 @@
 <?php
 
 $baseUrl = Yii::app()->baseUrl;
-Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/style2.css');
 $this->renderPartial('_menu', false,false);
 ?>
 <div class="wrapper col3">

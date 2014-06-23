@@ -455,3 +455,32 @@ div .mail-content{
     padding:70px;
     min-width: 787px;
 }
+
+.social {
+    margin: 10px 4px 0px 0px;
+}
+
+.fb_icon {
+    background: url(../css/images/fb.png);
+    width: 30px;
+    background-size: contain;
+    height: 30px;
+    float: right;
+}
+
+.fb_icon:hover {
+    opacity: 0.5;
+}
+
+.om_icon {
+    margin-right: 3px;
+    background: url(../css/images/omn.png);
+    width: 30px;
+    background-size: contain;
+    height: 30px;
+    float: right;
+}
+
+.om_icon:hover {
+    opacity: 0.5;
+}
