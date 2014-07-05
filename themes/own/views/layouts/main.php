@@ -64,7 +64,7 @@
         <div class="clear"></div>
         <div class="social">
             <a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373" target="_blank"><div class="fb_icon"></div></a>
-            <a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373" target="_blank"><div class="om_icon"></div></a>
+            <a href="http://omnicomm.ru/" target="_blank"><div class="om_icon"></div></a>
         </div>
     </div>
 

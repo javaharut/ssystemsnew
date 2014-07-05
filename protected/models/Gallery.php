@@ -34,6 +34,7 @@ class Gallery extends CActiveRecord
         else
             return $this->title_en;
     }
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */

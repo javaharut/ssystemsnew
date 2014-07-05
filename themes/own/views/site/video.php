@@ -1,6 +1,8 @@
 <?php
+/* @var $videos Gallery[] */
 $baseUrl = Yii::app()->baseUrl;
 $this->renderPartial('_menu', false, false);
+
 ?>
 <div class="wrapper col3">
 
@@ -22,7 +24,7 @@ $this->renderPartial('_menu', false, false);
                 <td valign="top">
                     <?php foreach($videos as $video):?>
                     <div class="bswr" style="width: 394px;height: 295px;float: left;text-align: center;margin-left: 70px;margin-bottom: 7px;background:black">
-                        <iframe style="margin-top: 4px;" width="380" height="287" src="<?=$video->path?>" frameborder="0" allowfullscreen=""></iframe>
+                        <iframe style="margin-top: 4px;" width="380" height="287" src="<?=str_replace('watch?v=','embed/',$video->path)?>" frameborder="0" allowfullscreen=""></iframe>
                     </div>
                     <?php endforeach;?>
                 </td>
