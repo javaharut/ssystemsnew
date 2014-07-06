@@ -91,11 +91,11 @@ return array(
 		),
 
         // release database
-       /* 'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=khach2_saninail',
+        /*'db'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=ssystem_main',
             'emulatePrepare' => true,
-            'username' => 'khach2_saninail',
-            'password' => 'Uranida060292',
+            'username' => 'ssystem_root',
+            'password' => '159753root',
             'charset' => 'utf8',
         ),*/
 
