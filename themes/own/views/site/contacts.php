@@ -31,12 +31,6 @@ $this->renderPartial('_menu', false);
         </div>
 
     </div>
-    <?php
-
-
-    ?>
-
-
 
     <script>
 

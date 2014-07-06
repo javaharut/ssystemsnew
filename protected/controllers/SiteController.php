@@ -186,11 +186,9 @@ class SiteController extends Controller
 
         if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
             mail($to, $name, $mess, $headers);
-            echo Yii::t("language", "mail_success");
+            echo "success";
         }
-        else {
-            echo  Yii::t("language", "mail_failure");
-        }
+        Yii::app()->end();
     }
 
 
