@@ -56,20 +56,11 @@ $this->renderPartial('_menu', false);
 
         var marker = new google.maps.Marker({
             position: latlng,
-           // animation:google.maps.Animation.BOUNCE,
+            animation:google.maps.Animation.BOUNCE,
             map: map,
             title: 'ssystems',
-            //icon: '<?=Yii::app()->baseUrl?>/css/images/pin.jpg'
+            icon: '<?=Yii::app()->baseUrl?>/css/images/pin.png'
         });
-
-        google.maps.event.addListener(marker, 'mouseover', function () {
-            infowindow.setContent('ssystems');
-            infowindow.open(map, this);
-        });
-
-        google.maps.event.addListener(marker, 'mouseout', function () {
-            infowindow.close();
-        });
-    </script>
+   </script>
 
 </div>
