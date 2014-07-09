@@ -2,7 +2,7 @@
 /* @var $this SiteController */
 ?>
 
-<div class="wrapper col2">
+<div class="wrapper col2" >
     <div id="topbar1">
         <div id="topnav">
             <?php
