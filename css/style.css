@@ -244,8 +244,8 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
     .font-style {
     font-family: Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     color: #FFFFFF;
-    font-size: 47;
-    padding: 5;
+    font-size: 47px;
+    padding: 5px;
     font-weight: bold;
     text-align: left;
     text-shadow: -2px 1px 7px rgba(255, 255, 255, 0.91);
@@ -257,9 +257,21 @@ float:left;
 margin-left:84px;
 }
 
+.style_gallery {
+  margin-top: 25px;
+  margin-bottom: -15px;
+  text-align: center;
+  font-size: 12px;
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2e6ab1;
+
+}
+
+
 .album
 {
-		background-position:53 0;
+	background-position:53 0;
 	text-align:center;
 }
 

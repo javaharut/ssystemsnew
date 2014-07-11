@@ -26,7 +26,7 @@ $this->renderPartial('_menu', false,false);
             <tr>
                 <td class="album">
                     <a class="modal" id="29" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/albom/'?>">
-                        <div width="200px" height="200px">
+                        <div width="200px" height="200px">   <div class="style_gallery"><?= Yii::t('language', 'img') ?></div>
                             <img src="<?=$baseUrl?>/images/images.png" class="images" width="205px" height="150px" style="margin-left: -15px; margin-top: 25px; margin-bottom: 60px;  ">
                         </div>
 
@@ -34,7 +34,7 @@ $this->renderPartial('_menu', false,false);
                 </td>
                 <td class="album">
                     <a class="modal" id="28" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/video/'?>">
-                        <div width="200px" height="200px">
+                        <div width="200px" height="200px">   <div class="style_gallery"><?= Yii::t('language', 'vid') ?></div>
                             <img src="<?=$baseUrl?>/images/video.png" class="vid" width="205px" height="150px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;  ">
 
                         </div>
@@ -42,7 +42,7 @@ $this->renderPartial('_menu', false,false);
                 </td>
                 <td class="album">
                     <a class="modal" id="27" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/ppk/'?>">
-                        <div width="200px" height="200px">
+                        <div width="200px" height="200px">  <div class="style_gallery"><?= Yii::t('language', 'pres') ?></div>
                             <img src="<?=$baseUrl?>/images/pres.png" class="pres" width="205px" height="150px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;">
                         </div>
                                             </a>
@@ -50,8 +50,8 @@ $this->renderPartial('_menu', false,false);
 
                 <td class="album">
                     <a class="modal" id="29" href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/catalog/'?>">
-                        <div width="200px" height="200px">
-                            <img src="<?=$baseUrl?>/images/catalog.png" class="images" width="205px" height="150px" style="margin-left: -25px; margin-top: 25px; margin-bottom: 60px;  margin-right: 20px; ">
+                        <div width="200px" height="200px">   <div class="style_gallery"><?= Yii::t('language', 'catalog') ?></div>
+                            <img src="<?=$baseUrl?>/images/catalog.png" class="images" width="205px" height="150px" style=" margin-left:-25px ; margin-top: 25px; margin-bottom: 60px;   ">
                         </div>
 
                     </a>
