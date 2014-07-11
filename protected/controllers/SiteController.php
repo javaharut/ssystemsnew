@@ -120,6 +120,11 @@ class SiteController extends Controller
         $this->render('ppk', array('ppks'=>$ppks));
     }
 
+    public function actionCatalog(){
+        $catalogs = Gallery::model()->findAllByAttributes(array('type' => 3));
+        $this->render('catalog', array('catalogs'=>$catalogs));
+    }
+
     public function actionProduct(){
         $products = Product::model()->findAll();
 

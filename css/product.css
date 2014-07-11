@@ -19,9 +19,9 @@
 
 .product {
     margin: 0px 20px 10px 20px;
-    padding: 15px;
+    padding: 5px;
     float: left;
-    width:400px;
+    width:280px;
 
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
     -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.60);
@@ -36,7 +36,7 @@
 }
 
 .product_img {
-    max-height:150px;
+    max-height:100px;
     float: left;
 }
 
@@ -84,7 +84,7 @@
 .product_header {
     text-align: left;
     padding: 5px 5px 5px 20px;
-    border-bottom: 2px dotted blue;
+    border-bottom: 1px solid #c6e4e4;
     font-size: large;
 }
 
@@ -92,4 +92,28 @@
     float: left;
     max-width: 400px;
     margin: 12px 35px 5px 2px;
+}
+
+/*------------------------------Pricelist-------------------*/
+
+.pricelist {
+
+    margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 8px;
+
+}
+
+.pricelist:hover {
+
+    background: #4096ee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4096ee 0%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4096ee), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4096ee 0%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4096ee 0%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4096ee 0%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #4096ee 0%,#4096ee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+
 }

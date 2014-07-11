@@ -34,7 +34,7 @@ $this->renderPartial('_menu', false);
 
     <script>
 
-        var latlng = new google.maps.LatLng(40.196118,44.498247);
+        var latlng = new google.maps.LatLng(40.210196, 44.470144);
         var options = {
             zoom: 15,
             center: latlng,
@@ -52,7 +52,7 @@ $this->renderPartial('_menu', false);
             position: latlng,
             animation:google.maps.Animation.BOUNCE,
             map: map,
-            title: 'ssystems',
+            title: 'Solid Systems LLC',
             icon: '<?=Yii::app()->baseUrl?>/css/images/pin.png'
         });
    </script>
