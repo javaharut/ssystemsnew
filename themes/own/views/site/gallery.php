@@ -21,7 +21,7 @@ $this->renderPartial('_menu', false,false);
 
     <div class="bswr">
 
-        <table id="min-content" cellpadding="0" cellspacing="0" border="0" style="width: 993px;">
+        <table id="min-content" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
             <tbody>
             <tr>
                 <td class="album">

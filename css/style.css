@@ -466,25 +466,48 @@ div .mail-content{
 
 .fb_icon {
     background: url(../css/images/fb.png);
-    width: 30px;
+    width: 28px;
     background-size: contain;
-    height: 30px;
+    height: 28px;
     float: right;
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    margin-left: 5px;
+    -webkit-box-shadow: -1px -1px 15px -5px rgba(50, 48, 50, 0.5);
+    -moz-box-shadow:    -1px -1px 15px -5px rgba(50, 48, 50, 0.5);
+    box-shadow:         -1px -1px 15px -5px rgba(50, 48, 50, 0.5);
 }
 
 .fb_icon:hover {
     opacity: 0.5;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .om_icon {
     margin-right: 3px;
     background: url(../css/images/omn.png);
-    width: 30px;
+    width: 28px;
     background-size: contain;
-    height: 30px;
+    height: 28px;
     float: right;
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .om_icon:hover {
     opacity: 0.5;
+    opacity: 0.5;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
