@@ -9,6 +9,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/product.css'
 
 $this->renderPartial('_menu', false,false);
 ?>
+
 <div class="wrapper col3">
 
     <div id="breadcrumb" style="text-align: left;">
