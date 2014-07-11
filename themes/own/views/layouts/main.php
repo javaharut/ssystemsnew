@@ -62,7 +62,11 @@
             echo $link;
         ?>
     </div>
-
+    <div class="icon"><a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373"target="_blank">
+            <img src="<?=Yii::app()->baseUrl?>/css/images/fb.png" alt="facebook" class="facebook" width="35px" height="35px"> </a>
+        <a href="http://omnicomm.ru/" target="_blank">
+            <img src="<?=Yii::app()->baseUrl?>/css/images/omn.png" alt="omnicomm" class="omnicomm" width="35px" height="35px" style="margin-left: 6px"> </a>
+    </div>
     <div class="contact_head_text">
         <?= Yii::t('language','header')?>
     </div>
