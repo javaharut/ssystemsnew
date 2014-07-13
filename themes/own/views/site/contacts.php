@@ -32,7 +32,7 @@ $this->renderPartial('_menu', false);
 
     </div>
 
-    <script>
+    <script >
 
         var latlng = new google.maps.LatLng(40.210196, 44.470144);
         var options = {

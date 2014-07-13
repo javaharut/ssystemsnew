@@ -34,8 +34,10 @@
 </head>
 
 <body id="top">
+<div class="test_icon" > <a href="http://online.omnicomm.ru/logon" target="_blank" >
+        <img src="<?=Yii::app()->baseUrl?>/css/images/test_icon.png" alt="Online Monitoring"  width="140" > </a>
+</div>
 
-        
 
 <!--start contactable -->
 <div id="contactable"></div>
@@ -67,7 +69,8 @@
     <div class="icon"><a href="https://www.facebook.com/pages/Omnicomm-Armenia-Ssystems-LLC/185143808253373"target="_blank">
             <img src="<?=Yii::app()->baseUrl?>/css/images/fb.png" alt="facebook" class="fb_icon" width="25px" height="25px"> </a>
         <a href="http://omnicomm.ru/" target="_blank">
-            <img src="<?=Yii::app()->baseUrl?>/css/images/omn.png" alt="omnicomm" class="om_icon" width="25px" height="25px" style="margin-left: 6px"> </a>
+            <img src="<?=Yii::app()->baseUrl?>/css/images/omn.png" alt="omnicomm" class="om_icon" width="25px" height="25px" style="margin-left: 4px"> </a>
+
     </div>
 
 

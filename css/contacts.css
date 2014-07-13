@@ -30,4 +30,19 @@ ul{
     width: 891px;
     height: 400px;
     margin: 38px 6px 22px 24px;
+    styles:[
+     {
+      "featureType": "transit.station.rail",
+"stylers": [
+{ "visibility": "on" },
+{ "invert_lightness": true },
+{ "color": "#808080" },
+{ "weight": 0.1 },
+{ "saturation": 1 },
+{ "lightness": 1 },
+{ "gamma": 1 }
+ ]
 }
+}
+
+
