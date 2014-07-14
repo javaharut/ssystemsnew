@@ -1,5 +1,6 @@
 <?php
 $baseUrl = Yii::app()->baseUrl;
+Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/lightbox.css');
 $this->renderPartial('_menu', false, false);
 ?>
 <div class="wrapper col3">
@@ -21,8 +22,12 @@ $this->renderPartial('_menu', false, false);
             <tr>
                 <td valign="top">
                     <?php foreach($ppks as $ppk):?>
-                        <div class="bswr" style="width: 394px;height: 295px;float: left;text-align: center;margin-left: 70px;margin-bottom: 7px;background:black">
-                            <iframe style="margin-top: 4px;" width="380" height="287" src="<?=$ppk->path?>" frameborder="0" allowfullscreen=""></iframe>
+                    <div class="hovergallery" style="width: 210px; height: 300px; overflow: hidden; padding: 10px; margin: 5px; float: left;">
+                        <a href="<?=$baseUrl?>/images/files/<?=$ppk->path?>" rel="lightbox[plants]">
+                            <img width="210" src="<?=$baseUrl?>/images/files/<?=$ppk->path?>" alt="<?=$ppk->ctitle?>" title="<?=$ppk->ctitle?>">
+                        </a>
+                    </div>
+
                         </div>
                     <?php endforeach;?>
                 </td>
