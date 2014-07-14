@@ -121,7 +121,7 @@ class SiteController extends Controller
     }
 
     public function actionCatalog(){
-        $catalogs = Gallery::model()->findAllByAttributes(array('type' => 3));
+        $catalogs = Gallery::model()->findAllByAttributes(array('type' => 5));
         $this->render('catalog', array('catalogs'=>$catalogs));
     }
 
@@ -141,7 +141,6 @@ class SiteController extends Controller
 
     public function actionPartner(){
         $partners = Partners::model()->findAll();
-
         // renders the view file 'protected/views/site/index.php'
         // using the default layouts 'protected/views/layouts/main.php'
         $this->render('partners', array('partners'=>$partners));

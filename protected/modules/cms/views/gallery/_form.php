@@ -23,7 +23,7 @@
     <div class="row">
         <?php echo $form->labelEx($model,'type'); ?>
         <?php echo $form->dropDownList($model,'type',
-            array('1'=>'image','2'=>'video', '3'=>'ppt','4'=>'album'), array()); ?>
+            array('1'=>'image','2'=>'video', '3'=>'ppt', '4'=>'album', '5'=>'catalog' ), array()); ?>
         <?php echo $form->error($model,'type'); ?>
     </div>
 
