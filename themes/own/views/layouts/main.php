@@ -6,12 +6,6 @@
     <meta name="author" content="Omnicomm Armenia">
     <meta name="language" content="ru" />
     <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/css/images/favicon.ico" type="image/x-icon" />
-     <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/jquery-1.11.1.js"></script>
-
-    <script type="text/javascript">
-        var lang = "<?=Yii::app()->language?>";
-    </script>
-    <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/script.js"></script>
 
     <!-- from omn -->
     <link rel="stylesheet" href="<?=Yii::app()->request->baseUrl?>/css/layout.css" type="text/css" />
@@ -29,6 +23,10 @@
 
     <link rel="stylesheet" href="<?=Yii::app()->request->baseUrl?>/css/contactable.css" type="text/css" />
     <!--   my important css files -->
+    <script type="text/javascript">
+        var lang = "<?=Yii::app()->language?>";
+    </script>
+    <script type="text/javascript" src="<?=Yii::app()->request->baseUrl?>/js/script.js"></script>
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
