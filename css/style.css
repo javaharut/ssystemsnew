@@ -493,6 +493,9 @@ div .mail-content{
     opacity: 0.5;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+
+
+
 }
 
 .test_icon {
@@ -521,6 +524,21 @@ div .mail-content{
     -webkit-box-shadow: -1px -1px 12px 1px rgba(50, 50, 50, 0.51);
     -moz-box-shadow:    -1px -1px 12px 1px rgba(50, 50, 50, 0.51);
     box-shadow:         -1px -1px 12px 1px rgba(50, 50, 50, 0.51);
+    z-index:100000;
+
+
+}
+
+.test_icon:hover {
+
+    background: #f85032; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f85032), color-stop(50%,#f16f5c), color-stop(51%,#f6290c), color-stop(71%,#f02f17), color-stop(100%,#e73827)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
 
 
 }

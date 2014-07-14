@@ -35,7 +35,7 @@
 
 <body id="top">
 
-<a href="http://online.omnicomm.ru/logon" target="_blank" > <div class="test_icon" >  <span style="color: #ffffff">Monitoring</span>
+<a href="http://online.omnicomm.ru/logon" target="_blank" > <div class="test_icon" >  <span style="color: #ffffff">monitoring</span>
     </div></a>
 
 
