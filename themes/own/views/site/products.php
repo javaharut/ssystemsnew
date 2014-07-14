@@ -18,12 +18,10 @@ $this->renderPartial('_menu', false,false);
 
     <div class="container">
         <!----------------------------pricelist------------------->
-       <div class="pricelist" style="height: 50px ; width: 100%">
 
-           nkjdnfkjdnsgfkjdsnfvkjd
+         <div class="pricelist1" > <span class="push"> <?= Yii::t('language','services')?> </span>  </div>
+        <div class="pricelist2" >  <span class="push"> <?= Yii::t('language','pricelist')?> </span> </div>
 
-
-       </div>
         <?php foreach($products as $product):?>
         <div class="product">
             <div class="img_wrap"><img class="product_img" src="<?=$baseUrl?>/images/product/<?=$product->id?>.png"/></div>

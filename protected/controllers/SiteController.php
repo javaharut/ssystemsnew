@@ -125,6 +125,11 @@ class SiteController extends Controller
         $this->render('catalog', array('catalogs'=>$catalogs));
     }
 
+    public function actionPricelist(){
+        $pricelists = Gallery::model()->findAllByAttributes(array('type' => 3));
+        $this->render('pricelist', array('pricelists'=>$pricelists));
+    }
+
     public function actionProduct(){
         $products = Product::model()->findAll();
 
