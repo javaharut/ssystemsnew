@@ -19,7 +19,7 @@ $this->renderPartial('_menu', false,false);
     <div class="container">
         <!----------------------------pricelist------------------->
 
-         <div class="pricelist1" > <span class="push"> <?= Yii::t('language','services')?> </span>  </div>
+         <a href="<?=Yii::app()->baseUrl?>/<?=Yii::app()->language?>/site/service"><div class="pricelist1" > <span class="push"> <?= Yii::t('language','services')?> </span>  </div></a>
         <div class="pricelist2" >  <span class="push"> <?= Yii::t('language','pricelist')?> </span> </div>
 
         <?php foreach($products as $product):?>

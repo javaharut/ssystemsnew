@@ -201,6 +201,11 @@ class SiteController extends Controller
     }
 
 
+    public function actionService() {
+        $main_by_id = Main::model()->findByPk(3);
+        $this->render('service', array('main_by_id'=>$main_by_id));
+    }
+
 /**************** sax  normal  e**************************/
 
 }

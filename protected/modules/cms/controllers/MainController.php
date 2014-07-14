@@ -79,6 +79,27 @@ class MainController extends SecureController
         $this->render('mainform',array('model'=>$model));
     }
 
+    public function actionService() {
+        $model=Main::model()->findByPk(3);
+
+        if(isset($_POST['ajax']) && $_POST['ajax']==='main-mainform-form')
+        {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+
+        if(isset($_POST['Main']))
+        {
+            $model->attributes=$_POST['Main'];
+            if($model->save())
+            {
+                // form inputs are valid, do something here
+                Yii::app()->user->setFlash("success","Saved!!!");
+            }
+        }
+        $this->render('mainform',array('model'=>$model));
+    }
+
     /**
      * Logs out the current user and redirect to homepage.
      */
