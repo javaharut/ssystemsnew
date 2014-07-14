@@ -3,6 +3,7 @@ $baseUrl = Yii::app()->baseUrl;
 Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/lightbox.css');
 $this->renderPartial('_menu', false, false);
 ?>
+
 <div class="wrapper col3">
 
     <div id="breadcrumb" style="text-align: left;">
@@ -35,4 +36,9 @@ $this->renderPartial('_menu', false, false);
             </tbody>
         </table>
     </div>
+<?php
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery-1.11.0.min.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/lightbox.js');
+
+?>
 </div>
