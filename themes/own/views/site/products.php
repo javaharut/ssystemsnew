@@ -20,8 +20,8 @@ $this->renderPartial('_menu', false,false);
         <!----------------------------pricelist------------------->
 
         <a href="<?=Yii::app()->baseUrl?>/<?=Yii::app()->language?>/site/service"><div class="pricelist1" > <?= Yii::t('language','services')?></div></a>
-        <a href="<?=Yii::app()->baseUrl?>/<?=Yii::app()->language?>/css/pricelist/pricelist.docx" download="pricelist.docx" target="_blank"><div class="pricelist2" >  <?= Yii::t('language','pricelist')?> </div></a>
-
+        <a href="<?=Yii::app()->baseUrl?>/css/pricelist/pricelist.docx" download="pricelist.docx" target="_blank"><div class="pricelist2" >  <?= Yii::t('language','pricelist')?> </div></a>
+        
         <?php foreach($products as $product):?>
         <div class="product">
             <div class="img_wrap"><img class="product_img" src="<?=$baseUrl?>/images/product/<?=$product->id?>.png"/></div>
