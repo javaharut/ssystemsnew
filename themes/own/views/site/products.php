@@ -11,7 +11,7 @@ $this->renderPartial('_menu', false,false);
 
     <div id="breadcrumb" style="text-align: left;">
         <ul>
-            <li><a href="<?=$baseUrl?>">/<?=Yii::t('language','main')?></a></li><li>»</li>
+            <li><a href="<?=$baseUrl?>"><?=Yii::t('language','main')?></a></li><li>»</li>
             <li class="current"><a href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/product/'?>"><?=Yii::t('language','products')?></a></li>    </ul>
     </div>
 
@@ -19,8 +19,8 @@ $this->renderPartial('_menu', false,false);
     <div class="container">
         <!----------------------------pricelist------------------->
 
-         <a href="<?=Yii::app()->baseUrl?>/<?=Yii::app()->language?>/site/service"><div class="pricelist1" > <?= Yii::t('language','services')?></div></a>
-        <a href="<?=Yii::app()->baseUrl?>/<?=Yii::app()->language?>/css/pricelist/1.docx"><div class="pricelist2" >  <?= Yii::t('language','pricelist')?> </div></a>
+        <a href="<?=Yii::app()->baseUrl?>/<?=Yii::app()->language?>/site/service"><div class="pricelist1" > <?= Yii::t('language','services')?></div></a>
+        <a href="<?=Yii::app()->baseUrl?>/<?=Yii::app()->language?>/css/pricelist/1.docx" download="1.docx" target="_blank"><div class="pricelist2" >  <?= Yii::t('language','pricelist')?> </div></a>
 
         <?php foreach($products as $product):?>
         <div class="product">

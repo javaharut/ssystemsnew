@@ -11,7 +11,7 @@ $this->renderPartial('_menu', false,false);
 
     <div id="breadcrumb" style="text-align: left;">
         <ul>
-            <li><a href="<?=$baseUrl?>">/<?=Yii::t('language','main')?></a></li><li>»</li>
+            <li><a href="<?=$baseUrl?>"><?=Yii::t('language','main')?></a></li><li>»</li>
             <li class="current"><a href="<?=$baseUrl.'/'.Yii::t('language','prefix').'/site/partners/'?>"><?=Yii::t('language','partners')?></a></li>    </ul>
     </div>
 
